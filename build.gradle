@@ -1,6 +1,9 @@
 plugins {
     id 'java'
+    id 'war'
 }
+
+sourceCompatibility = 1.8
 
 group 'org.yofik'
 version '1.0-SNAPSHOT'
@@ -11,4 +14,5 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
 }
