@@ -30,4 +30,11 @@ public class ControllerServlet extends HttpServlet {
                 .getRequestDispatcher("/result")
                 .forward(req, resp);
     }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        getServletContext()
+                .getRequestDispatcher("/index.jsp")
+                .forward(req, resp);
+    }
 }
