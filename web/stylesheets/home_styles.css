@@ -1,7 +1,8 @@
 :root {
     box-sizing: border-box;
-
     --main-color: #00bcd4;
+    --bkg-color: white;
+    --text-color: black;
 }
 
 *,
@@ -10,20 +11,37 @@
     box-sizing: inherit;
 }
 
-
-.mt3 {
-    margin-top: 3rem;
+body.dark-theme {
+    --bkg-color: #212121;
+    --text-color: white;
 }
 
-.mt1 {
-    margin-top: 1rem;
+body.dark-theme text,
+body.dark-theme .svg-arrow {
+    fill: var(--text-color);
 }
 
-.center {
-    margin: auto;
+body.dark-theme line {
+    stroke: var(--text-color);
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    background-color: var(--bkg-color);
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 .main-border {
     border: 2px solid var(--main-color);
     border-radius: 20px;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #0994a7;
 }
