@@ -1,0 +1,29 @@
+:root {
+    box-sizing: border-box;
+
+    --main-color: #00bcd4;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+
+.mt3 {
+    margin-top: 3rem;
+}
+
+.mt1 {
+    margin-top: 1rem;
+}
+
+.center {
+    margin: auto;
+}
+
+.main-border {
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+}
