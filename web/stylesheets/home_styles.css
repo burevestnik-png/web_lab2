@@ -33,6 +33,12 @@ p:not(.footer-paragraph) {
     color: var(--text-color);
 }
 
+.nav-wrapper,
+footer,
+button {
+    transition: background-color 400ms;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -53,4 +59,8 @@ main {
 
 .switch label input[type=checkbox]:checked+.lever:after {
     background-color: #0994a7;
+}
+
+img {
+    height: 5rem;
 }

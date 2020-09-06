@@ -3,19 +3,23 @@ const KEYS = {
 }
 
 const themeBtn = document.getElementById('theme-btn')
+const submitBtn = document.getElementById('submit');
+const resetBtn = document.getElementById('reset');
 
 const themeElements = [
     document.querySelector('.nav-wrapper'),
-    document.querySelector('footer')
+    document.querySelector('footer'),
+    submitBtn,
+    resetBtn
 ]
 
 const changeTheme = (event, isDark = false) => {
     document.body.classList.toggle('dark-theme')
     themeElements.forEach(value => value.classList.toggle('darken-4'))
 
-    Toast.infoToast('Theme was changed')
-
     if (!isDark) {
+        Toast.infoToast('Theme was changed')
+
         localStorage.setItem(
             KEYS.theme,
             localStorage.getItem(KEYS.theme) === 'dark' ? 'white' : 'dark'

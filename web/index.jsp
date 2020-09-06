@@ -2,10 +2,6 @@
          language="java"
          pageEncoding="utf-8" %>
 
-<%
-    String path = request.getContextPath();
-%>
-
 <html>
 <head>
     <title>Web lab 2</title>
@@ -13,11 +9,13 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet"
-          href="<%= path %>/stylesheets/home_styles.css">
+          href="${pageContext.request.contextPath}/stylesheets/home_styles.css">
     <link rel="stylesheet"
-          href="<%= path %>/stylesheets/utility_classes.css">
+          href="${pageContext.request.contextPath}/stylesheets/utility_classes.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/favicon/favicon.ico">
 </head>
 <body>
 <jsp:include page="/templates/header.html" />
@@ -28,7 +26,7 @@
             <jsp:include page="/templates/svg.html" />
         </div>
 
-        <div class="col s6 row main-border hoverable">
+        <div class="col s6 row main-border hoverable mb0">
             <form>
                 <p class="center-align">Choose hit options:</p>
 
@@ -43,6 +41,19 @@
 
                 <div class="col s12">
                     <p class="center-align">Choose X value:</p>
+                </div>
+
+                <div class="col s12 center pb2">
+                    <button class="cyan waves-effect waves-light btn w6 mr1"
+                            id="submit"
+                    >
+                        Submit
+                    </button>
+                    <button class="cyan waves-effect waves-light btn w6"
+                            id="reset"
+                    >
+                        Reset
+                    </button>
                 </div>
             </form>
         </div>
