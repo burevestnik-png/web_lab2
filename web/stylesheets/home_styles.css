@@ -14,15 +14,23 @@
 body.dark-theme {
     --bkg-color: #212121;
     --text-color: white;
+    --main-color: #006064;
 }
 
-body.dark-theme text,
-body.dark-theme .svg-arrow {
+text,
+.svg-arrow {
+    transition: fill 400ms;
     fill: var(--text-color);
 }
 
-body.dark-theme line {
+line {
+    transition: stroke 400ms;
     stroke: var(--text-color);
+}
+
+p:not(.footer-paragraph) {
+    transition: color 400ms;
+    color: var(--text-color);
 }
 
 body {
@@ -30,6 +38,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
 
+    transition: background-color 400ms;
     background-color: var(--bkg-color);
 }
 
