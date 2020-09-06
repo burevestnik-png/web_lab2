@@ -44,15 +44,17 @@
                 </div>
 
                 <div class="col s12 center pb2">
-                    <button class="cyan waves-effect waves-light btn w6 mr1"
+                    <button class="cyan waves-effect waves-light btn w8 mr1"
                             id="submit"
                     >
                         Submit
+                        <i class="material-icons right">send</i>
                     </button>
-                    <button class="cyan waves-effect waves-light btn w6"
+                    <button class="cyan waves-effect waves-light btn w8"
                             id="reset"
                     >
                         Reset
+                        <i class="material-icons right">delete</i>
                     </button>
                 </div>
             </form>
