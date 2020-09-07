@@ -166,8 +166,8 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous">
 </script>
-<script src="${pageContext.request.contextPath}/scripts/utilities/Toast.js"></script>
-<script src="${pageContext.request.contextPath}/scripts/utilities/DataExtractor.js"></script>
-<script src="${pageContext.request.contextPath}/scripts/initializer.js"></script>
+<script type="module" src="${pageContext.request.contextPath}/scripts/initializer.js"></script>
+<script type="module" src="${pageContext.request.contextPath}/scripts/utilities/Toast.js"></script>
+<script type="module" src="${pageContext.request.contextPath}/scripts/utilities/DataExtractor.js"></script>
 </body>
 </html>

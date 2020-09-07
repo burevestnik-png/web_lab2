@@ -1,3 +1,5 @@
+import Toast from "./utilities/Toast.js";
+
 const KEYS = {
     theme: 'theme'
 }
