@@ -1,6 +1,10 @@
 package beans;
 
-public final class Hit {
+import java.io.Serializable;
+
+public final class Hit implements Serializable {
+    private static final long serialVersionUID = 465789L;
+
     private double x;
     private double y;
     private double r;

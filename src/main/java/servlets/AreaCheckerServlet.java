@@ -1,6 +1,7 @@
 package servlets;
 
 import beans.Hit;
+import beans.HitHistory;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +15,14 @@ import java.util.Locale;
 
 @WebServlet("/result")
 public class AreaCheckerServlet extends HttpServlet {
+    private final HitHistory hitHistory;
+
+
+    public AreaCheckerServlet() {
+        hitHistory = new HitHistory();
+    }
+
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String xString = req.getParameter("x");
@@ -44,7 +53,9 @@ public class AreaCheckerServlet extends HttpServlet {
 
         hit.setExecutionTime("" + (endTime - startTime));
 
-        req.setAttribute("hit", hit);
+        hitHistory.getHitList().add(hit);
+
+        req.setAttribute("hitHistory", hitHistory);
         getServletContext()
                 .getRequestDispatcher("/result.jsp")
                 .forward(req, resp);
