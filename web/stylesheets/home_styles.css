@@ -1,0 +1,66 @@
+:root {
+    box-sizing: border-box;
+    --main-color: #00bcd4;
+    --bkg-color: white;
+    --text-color: black;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body.dark-theme {
+    --bkg-color: #212121;
+    --text-color: white;
+    --main-color: #006064;
+}
+
+text,
+.svg-arrow {
+    transition: fill 400ms;
+    fill: var(--text-color);
+}
+
+line {
+    transition: stroke 400ms;
+    stroke: var(--text-color);
+}
+
+p:not(.footer-paragraph) {
+    transition: color 400ms;
+    color: var(--text-color);
+}
+
+.nav-wrapper,
+footer,
+button {
+    transition: background-color 400ms;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    transition: background-color 400ms;
+    background-color: var(--bkg-color);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.main-border {
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #0994a7;
+}
+
+img {
+    height: 5rem;
+}
