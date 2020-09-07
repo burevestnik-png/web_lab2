@@ -1,9 +1,5 @@
 package beans;
 
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Locale;
-
 public final class Hit {
     private double x;
     private double y;
@@ -46,7 +42,6 @@ public final class Hit {
     }
 
     public String getCurrentDate() {
-        currentDate = ZonedDateTime.now().format(DateTimeFormatter.ofPattern("MM:HH:YY", Locale.forLanguageTag("RU")));
         return currentDate;
     }
 
