@@ -1,7 +1,9 @@
 package beans;
 
+import java.util.List;
+
 public final class Hit {
-    private double x;
+    private double x
     private double y;
     private double r;
 
