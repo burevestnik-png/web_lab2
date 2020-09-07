@@ -124,19 +124,19 @@
                 </div>
 
                 <div class="col s12 mb2">
-                    <button class="cyan waves-effect waves-light btn">
+                    <button class="cyan waves-effect waves-light btn r-btn" type="button">
                         1
                     </button>
-                    <button class="cyan waves-effect waves-light btn">
+                    <button class="cyan waves-effect waves-light btn r-btn" type="button">
                         2
                     </button>
-                    <button class="cyan waves-effect waves-light btn">
+                    <button class="cyan waves-effect waves-light btn r-btn" type="button">
                         3
                     </button>
-                    <button class="cyan waves-effect waves-light btn">
+                    <button class="cyan waves-effect waves-light btn r-btn" type="button">
                         4
                     </button>
-                    <button class="cyan waves-effect waves-light btn">
+                    <button class="cyan waves-effect waves-light btn r-btn" type="button">
                         5
                     </button>
                 </div>
@@ -166,8 +166,9 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous">
 </script>
-<script type="module" src="${pageContext.request.contextPath}/scripts/initializer.js"></script>
-<script type="module" src="${pageContext.request.contextPath}/scripts/utilities/Toast.js"></script>
-<script type="module" src="${pageContext.request.contextPath}/scripts/utilities/DataExtractor.js"></script>
+<script src="${pageContext.request.contextPath}/scripts/utilities/Toast.js"></script>
+<script src="${pageContext.request.contextPath}/scripts/utilities/DataExtractor.js"></script>
+<script src="${pageContext.request.contextPath}/scripts/event-handlers.js"></script>
+<script src="${pageContext.request.contextPath}/scripts/initializer.js"></script>
 </body>
 </html>

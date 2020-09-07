@@ -1,7 +1,9 @@
-export default class DataExtractor {
+class DataExtractor {
+    static r;
+
     static getValues() {
         return {
-            x: this.getX(),
+            xValues: this.getX(),
             y: this.getY(),
             r: this.getR()
         }
@@ -18,7 +20,11 @@ export default class DataExtractor {
     }
 
     static getR() {
-        return Number($('input[name="r-group"]:checked').val());
+        return this.r;
+    }
+
+    static setR(r) {
+        this.r = r;
     }
 
     static getY() {

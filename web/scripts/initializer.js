@@ -7,6 +7,7 @@ const KEYS = {
 const themeBtn = document.getElementById('theme-btn')
 const submitBtn = document.getElementById('submit');
 const resetBtn = document.getElementById('reset');
+const $rGroupButtons = $('.r-btn')
 
 const themeElements = [
     document.querySelector('.nav-wrapper'),
@@ -14,20 +15,6 @@ const themeElements = [
     submitBtn,
     resetBtn
 ]
-
-const changeTheme = (event, isDark = false) => {
-    document.body.classList.toggle('dark-theme')
-    themeElements.forEach(value => value.classList.toggle('darken-4'))
-
-    if (!isDark) {
-        Toast.infoToast('Theme was changed')
-
-        localStorage.setItem(
-            KEYS.theme,
-            localStorage.getItem(KEYS.theme) === 'dark' ? 'white' : 'dark'
-        )
-    }
-}
 
 document.addEventListener("DOMContentLoaded", () => {
     const theme = localStorage.getItem(KEYS.theme);
@@ -44,3 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 themeBtn.addEventListener('click', changeTheme)
+
+$rGroupButtons.on(
+    'click',
+        event => DataExtractor.setR(Number(event.target.innerText))
+);
