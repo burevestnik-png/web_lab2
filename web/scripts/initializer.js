@@ -1,5 +1,5 @@
 import Toast from "./utilities/Toast.js";
-import DataExtractor from "./utilities/DataExtractor";
+import DataExtractor from "./utilities/DataExtractor.js";
 
 const KEYS = {
     theme: 'theme'
