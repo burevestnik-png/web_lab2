@@ -2,6 +2,11 @@
          language="java"
          pageEncoding="utf-8" %>
 
+<%
+    String[] checkboxValues = {"-5", "-4", "-3", "-2", "-1", "&nbsp;0", "&nbsp;1", "&nbsp;2", "&nbsp;3"};
+    String[] buttonValues = {"1", "2", "3", "4", "5"};
+%>
+
 <html>
 <head>
     <title>Web lab 2</title>
@@ -20,13 +25,13 @@
 <body>
 <jsp:include page="/templates/header.html"/>
 
-<main class="container">
-    <div class="row mt3 valign-wrapper">
+<main class="container valign-wrapper">
+    <div class="row valign-wrapper" style="margin-top: 3rem;">
         <div class="col s6 center">
             <jsp:include page="/templates/svg.html"/>
         </div>
 
-        <div class="col s6 row main-border hoverable mb0">
+        <div class="col s6 row main-border hoverable">
             <form>
                 <p class="center-align">Choose hit options:</p>
 
@@ -41,107 +46,37 @@
 
                 <div class="col s12">
                     <p class="center-align">Choose X value:</p>
-                    <p>
-                        <label>
-                            <input type="checkbox"
-                                   value="-5"
-                                   name="x-group"
-                                   class="filled-in" />
-                            <span>-5</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox"
-                                   name="x-group"
-                                   value="-4"
-                                   class="filled-in" />
-                            <span>-4</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox"
-                                   name="x-group"
-                                   value="-3"
-                                   class="filled-in" />
-                            <span>-3</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox"
-                                   name="x-group"
-                                   value="-2"
-                                   class="filled-in" />
-                            <span>-2</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox"
-                                   name="x-group"
-                                   value="-1"
-                                   class="filled-in" />
-                            <span>-1</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox"
-                                   name="x-group"
-                                   value="0"
-                                   class="filled-in" />
-                            <span>0</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox"
-                                   name="x-group"
-                                   value="1"
-                                   class="filled-in" />
-                            <span>1</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox"
-                                   name="x-group"
-                                   value="2"
-                                   class="filled-in"/>
-                            <span>2</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox"
-                                   name="x-group"
-                                   class="filled-in" />
-                            <span>3</span>
-                        </label>
-                    </p>
+                    <div class="x-group">
+                        <%
+                            for (String value : checkboxValues) {
+                                out.println("<label class=\"valign-wrapper\">");
+                                out.println("<div class=\"center\">");
+                                out.println("<input type=\"checkbox\"");
+                                out.println("value=\"" + value + "\"");
+                                out.println("name=\"x-group\"");
+                                out.println("class=\"filled-in center\"/>");
+                                out.println("<span> " + value + "</span>");
+                                out.println("</div>");
+                                out.println("</label>");
+                            }
+                        %>
+                    </div>
                 </div>
 
-                <div class="col s12 mb2">
-                    <button class="cyan waves-effect waves-light btn r-btn" type="button">
-                        1
-                    </button>
-                    <button class="cyan waves-effect waves-light btn r-btn" type="button">
-                        2
-                    </button>
-                    <button class="cyan waves-effect waves-light btn r-btn" type="button">
-                        3
-                    </button>
-                    <button class="cyan waves-effect waves-light btn r-btn" type="button">
-                        4
-                    </button>
-                    <button class="cyan waves-effect waves-light btn r-btn" type="button">
-                        5
-                    </button>
+                <div class="col s12" style="margin: 3rem 0 2.5rem;">
+                    <p class="center-align">Choose R value:</p>
+                    <div class="center">
+                        <%
+                            for (String value : buttonValues) {
+                                out.println("<button class=\"cyan waves-effect waves-light btn r-btn\" type=\"button\">");
+                                out.println(value);
+                                out.println("</button>");
+                            }
+                        %>
+                    </div>
                 </div>
 
-                <div class="col s12 center pb2">
+                <div class="col s12 center" style="padding-bottom: 2rem;">
                     <button class="cyan waves-effect waves-light btn w8 mr1"
                             id="submit"
                     >

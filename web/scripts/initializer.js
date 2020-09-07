@@ -1,5 +1,6 @@
 import Toast from "./utilities/Toast.js";
 import DataExtractor from "./utilities/DataExtractor.js";
+import Validator from "./utilities/Validator.js";
 
 const KEYS = {
     theme: 'theme'
@@ -20,6 +21,7 @@ const themeElements = [
 const changeTheme = (event, isDark = false) => {
     document.body.classList.toggle('dark-theme')
     themeElements.forEach(value => value.classList.toggle('darken-4'))
+    document.querySelectorAll('.r-btn').forEach(value => value.classList.toggle('darken-4'))
 
     if (!isDark) {
         Toast.infoToast('Theme was changed')
@@ -34,14 +36,18 @@ const changeTheme = (event, isDark = false) => {
 const submitHandler = (event) => {
     event.preventDefault();
 
-    const {xValues, y, r} = DataExtractor.getValues();
+    const {x, y, r} = DataExtractor.getValues();
+
+    if (!Validator.isInputValid(x, y, r)) {
+        return;
+    }
 
     const formData = new FormData();
     formData.append('y', y);
     formData.append('r', r);
-    formData.append('x', xValues.join(' '));
+    formData.append('x', x.join(' '));
 
-    fetch('/', {
+    /*fetch('/', {
         method: 'POST',
         body: formData
     })
@@ -49,7 +55,7 @@ const submitHandler = (event) => {
         .then(data => {
                 console.log(data);
             }
-        )
+        )*/
 }
 
 document.addEventListener("DOMContentLoaded", () => {

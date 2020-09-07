@@ -64,3 +64,11 @@ main {
 img {
     height: 5rem;
 }
+
+.x-group {
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    row-gap: .7rem;
+
+    justify-content: center;
+}
