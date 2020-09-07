@@ -3,7 +3,7 @@ export default class DataExtractor {
 
     static getValues() {
         return {
-            xValues: this.getX(),
+            x: this.getX(),
             y: this.getY(),
             r: this.getR()
         }
