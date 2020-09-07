@@ -1,4 +1,4 @@
-class DataExtractor {
+export default class DataExtractor {
     static r;
 
     static getValues() {
