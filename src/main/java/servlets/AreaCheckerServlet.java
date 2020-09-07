@@ -53,7 +53,6 @@ public class AreaCheckerServlet extends HttpServlet {
             throw new RuntimeException("Wrong type of some arguments");
         }
 
-        List<Hit> hitArray = new ArrayList<>();
         for (double x : xArray) {
             Hit hit = new Hit();
             hit.setX(x);
@@ -67,10 +66,10 @@ public class AreaCheckerServlet extends HttpServlet {
 
             hit.setExecutionTime("" + (endTime - startTime));
 
-            hitArray.add(hit);
+            hitHistory.getHitList().add(hit);
         }
 
-        req.setAttribute("hitArray", hitArray);
+        req.setAttribute("hitHistory", hitHistory);
         getServletContext()
                 .getRequestDispatcher("/result.jsp")
                 .forward(req, resp);
@@ -85,7 +84,7 @@ public class AreaCheckerServlet extends HttpServlet {
             return false;
         }
 
-        if (r < MIN_R || r > MAX_X) {
+        if (r < MIN_R || r > MAX_R) {
             return false;
         }
 
