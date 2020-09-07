@@ -6,24 +6,31 @@
 <head>
     <title>Web lab 2</title>
 
-    <link rel="stylesheet"
+    <link type="text/css"
+          rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet"
+    <link type="text/css"
+          rel="stylesheet"
           href="${pageContext.request.contextPath}/stylesheets/home_styles.css">
-    <link rel="stylesheet"
+    <link type="text/css"
+          rel="stylesheet"
           href="${pageContext.request.contextPath}/stylesheets/utility_classes.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/favicon/favicon.ico">
 </head>
 <body>
-<jsp:include page="/templates/header.html"/>
+
+<%@ include file="templates/header.html" %>
+
+<%--<jsp:include page="templates/header.html"/>--%>
 
 <main class="container">
     <div class="row mt3 valign-wrapper">
         <div class="col s6 center">
-            <jsp:include page="/templates/svg.html"/>
+            <%@ include file="templates/svg.html" %>
+<%--            <jsp:include page="templates/svg.html"/>--%>
         </div>
 
         <div class="col s6 row main-border hoverable mb0">
@@ -160,9 +167,11 @@
     </div>
 </main>
 
-<jsp:include page="/templates/footer.html"/>
+<%@ include file="templates/footer.html" %>
+<%--<jsp:include page="templates/footer.html"/>--%>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+<script type="text/javascript"
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous">
 </script>

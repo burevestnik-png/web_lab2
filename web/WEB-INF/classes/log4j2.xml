@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <RollingFile name="logfile"
+                     fileName="D:\\Workspaces\\ITMO_Web\\web_lab2\\web\\logs\\logfile.log"
+                     filePattern="log4j/logfile-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout
+                pattern="%highlight{[%-5level]} %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="5 mB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="logfile"/>
+        </Root>
+    </Loggers>
+</Configuration>

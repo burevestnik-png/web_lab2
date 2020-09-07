@@ -34,22 +34,36 @@ const changeTheme = (event, isDark = false) => {
 const submitHandler = (event) => {
     event.preventDefault();
 
+    console.log("here blyat");
+
     const {xValues, y, r} = DataExtractor.getValues();
+
+    console.log(xValues + " " + y + r + " -- params");
 
     const formData = new FormData();
     formData.append('y', y);
     formData.append('r', r);
     formData.append('x', xValues.join(' '));
 
-    fetch('/', {
-        method: 'POST',
-        body: formData
+    $.post('/web/api', {
+        xValues: xValues.join(" "),
+        y: y,
+        r: r
+    }, function(data) {
+        console.log(data); // ответ от сервера
     })
-        .then(response => response.text())
-        .then(data => {
-                console.log(data);
-            }
-        )
+        .error(function(jqXHR) { console.log('Ошибка выполнения'); })
+        .complete(function() { console.log('Завершение выполнения'); });
+
+    // fetch('/web/api', {
+    //     method: 'POST',
+    //     body: formData
+    // })
+    //     .then(response => response.text())
+    //     .then(data => {
+    //             console.log(data);
+    //         }
+    //     )
 }
 
 document.addEventListener("DOMContentLoaded", () => {

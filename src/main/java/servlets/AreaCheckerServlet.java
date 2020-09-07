@@ -16,7 +16,7 @@ import java.util.Locale;
 public class AreaCheckerServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String xString = req.getParameter("x");
+        String xString = req.getParameter("xValues");
         String yString = req.getParameter("y");
         String rString = req.getParameter("r");
 
