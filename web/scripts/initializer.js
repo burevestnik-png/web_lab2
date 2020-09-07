@@ -1,6 +1,7 @@
 import Toast from "./utilities/Toast.js";
 import DataExtractor from "./utilities/DataExtractor.js";
 import Validator from "./utilities/Validator.js";
+import Graph from "./utilities/Graph";
 
 const KEYS = {
     theme: 'theme'
@@ -97,4 +98,27 @@ $rGroupButtons.on('click', event => {
 
 $xCheckBoxes.on('click', function() {
     this.checked ? $(this).attr('checked', true) : $(this).attr('checked', false)
+})
+
+$('svg').on('click', ( event ) => {
+    const clickPoint = Graph.getClickPoint(event);
+
+    const r = DataExtractor.getR();
+    if (r === undefined) {
+
+    }
+
+    /*this.graphicsService.changeDotPosition(clickPoint.x, clickPoint.y, this.currentRValue, true)
+    $('#y-value').val('');
+    $('.y-value-label').removeClass('active-input');
+    $('input[name="x-group"]:checked').prop('checked', false);
+
+    fetch(`${ this.config.get('SERVER_PATH') }hit.php`, {
+        method: 'POST',
+        body: this.formRequestFromClick(clickPoint.x, clickPoint.y, this.currentRValue)
+    })
+        .then(response => response.text())
+        .then(data => {
+
+        });*/
 })

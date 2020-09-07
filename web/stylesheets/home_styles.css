@@ -28,7 +28,8 @@ line {
     stroke: var(--text-color);
 }
 
-p:not(.footer-paragraph) {
+p:not(.footer-paragraph),
+input[type=text] {
     transition: color 400ms;
     color: var(--text-color);
 }
