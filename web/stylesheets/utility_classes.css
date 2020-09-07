@@ -1,0 +1,35 @@
+.mt3 {
+    margin-top: 3rem;
+}
+
+.mt1 {
+    margin-top: 1rem;
+}
+
+.mb05 {
+    margin-bottom: 0.5rem;
+}
+
+.mb2 {
+    margin-bottom: 2rem;
+}
+
+.mr1 {
+    margin-right: 1rem;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.pb2 {
+    padding-bottom: 2rem !important;
+}
+
+.center {
+    margin: auto;
+}
+
+.w8 {
+    width: 8rem;
+}
