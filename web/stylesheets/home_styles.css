@@ -72,3 +72,13 @@ img {
 
     justify-content: center;
 }
+
+input[type="checkbox"].filled-in:checked + span:not(.lever):after {
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid var(--main-color) !important;
+    box-shadow: 0 1px 0 0 var(--main-color) !important;
+}

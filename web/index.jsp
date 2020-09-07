@@ -39,7 +39,7 @@
                     <input id="y-value"
                            type="text"
                            autocomplete="off"
-                           placeholder="Choose Y value:"
+                           placeholder="Write Y value"
                     >
                     <label for="y-value">Y value</label>
                 </div>
@@ -54,7 +54,7 @@
                                 out.println("<input type=\"checkbox\"");
                                 out.println("value=\"" + value + "\"");
                                 out.println("name=\"x-group\"");
-                                out.println("class=\"filled-in center\"/>");
+                                out.println("class=\"filled-in center cyan\"/>");
                                 out.println("<span> " + value + "</span>");
                                 out.println("</div>");
                                 out.println("</label>");
@@ -74,6 +74,16 @@
                             }
                         %>
                     </div>
+                    <p class="center-align"
+                       style="font-size: .8rem;"
+                    >
+                        Current R:
+                        <span id="current-r"
+                              style="font-style: italic;"
+                        >
+                            No value selected
+                        </span>
+                    </p>
                 </div>
 
                 <div class="col s12 center" style="padding-bottom: 2rem;">

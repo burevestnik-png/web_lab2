@@ -1,15 +1,25 @@
 import Toast from "./Toast.js";
 
 export default class Validator {
-    static isInputValid(x, y, z) {
+    static isInputValid(x, y, r) {
         const errors = [];
 
         if (x.length === 0) {
             errors.push('Value X must be chosen')
         }
 
-        if (errors) {
-            errors.forEach(value => Toast.errorToast(value));
+        if (!this.isValidR(r)) {
+            errors.push('Value R must be chosen')
+        }
+
+        if (this.isValidY(y)) {
+            errors.push(this.isValidY(y));
+        }
+
+        if (errors.length !== 0) {
+            errors.forEach((error, index) => {
+                setTimeout(() => Toast.errorToast(error), index * 300)
+            });
             return false;
         }
 
@@ -17,7 +27,7 @@ export default class Validator {
     }
 
     static isValidR( value ) {
-        return isNaN(value) ? "" : ""
+        return value !== undefined;
     }
 
     static isValidY( value ) {
@@ -25,12 +35,16 @@ export default class Validator {
             return "";
         }
 
-        if (!Number(value)) {
-            return "";
+        if (value === 'mokString') {
+            return "Value Y must be written";
         }
 
-        if (Number(value) < -3 || Number(value) > 3) {
-            return ""
+        if (!Number(value)) {
+            return "The field Y must be number";
+        }
+
+        if (Number(value) < -5 || Number(value) > 3) {
+            return "Y value should be from -5 to 3"
         }
 
         return "";

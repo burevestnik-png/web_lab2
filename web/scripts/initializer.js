@@ -10,6 +10,9 @@ const themeBtn = document.getElementById('theme-btn')
 const submitBtn = document.getElementById('submit');
 const resetBtn = document.getElementById('reset');
 const $rGroupButtons = $('.r-btn')
+const $currentR = $('#current-r')
+const $xCheckBoxes = $('input[name="x-group"]');
+const $yInput = $('#y-value')
 
 const themeElements = [
     document.querySelector('.nav-wrapper'),
@@ -41,21 +44,32 @@ const submitHandler = (event) => {
     if (!Validator.isInputValid(x, y, r)) {
         return;
     }
+    Toast.successToast('Data was sent to server');
 
-    const formData = new FormData();
-    formData.append('y', y);
-    formData.append('r', r);
-    formData.append('x', x.join(' '));
+    const formData = new FormData()
+    formData.append('y', y)
+    formData.append('r', r)
+    formData.append('x', x.join(' '))
 
-    /*fetch('/', {
+    fetch('/', {
         method: 'POST',
         body: formData
     })
         .then(response => response.text())
         .then(data => {
                 console.log(data);
-            }
-        )*/
+            })
+}
+
+const resetHandler = (event) => {
+    event.preventDefault();
+
+    DataExtractor.setR(undefined);
+    $currentR.text('No value selected');
+
+    $('input[name="x-group"]:checked').click();
+
+    $yInput.val('')
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -74,5 +88,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 themeBtn.addEventListener('click', changeTheme)
 submitBtn.addEventListener('click', submitHandler)
+resetBtn.addEventListener('click', resetHandler)
 
-$rGroupButtons.on('click', event => DataExtractor.setR(Number(event.target.innerText)));
+$rGroupButtons.on('click', event => {
+    DataExtractor.setR(Number(event.target.innerText))
+    $currentR.text(Number(event.target.innerText))
+});
+
+$xCheckBoxes.on('click', function() {
+    this.checked ? $(this).attr('checked', true) : $(this).attr('checked', false)
+})
