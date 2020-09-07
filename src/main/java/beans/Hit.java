@@ -1,9 +1,11 @@
 package beans;
 
-import java.util.List;
+import java.io.Serializable;
 
-public final class Hit {
-    private double x
+public final class Hit implements Serializable {
+    private static final long serialVersionUID = 465789L;
+
+    private double x;
     private double y;
     private double r;
 

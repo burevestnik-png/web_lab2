@@ -1,6 +1,7 @@
 package servlets;
 
 import beans.Hit;
+import beans.HitHistory;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,6 +20,14 @@ public class AreaCheckerServlet extends HttpServlet {
     private static final double MIN_X = -5, MAX_X = 3;
     private static final double MIN_Y = -5, MAX_Y = 3;
     private static final double MIN_R = 1, MAX_R = 5;
+
+
+    private final HitHistory hitHistory;
+
+
+    public AreaCheckerServlet() {
+        hitHistory = new HitHistory();
+    }
 
 
     @Override
