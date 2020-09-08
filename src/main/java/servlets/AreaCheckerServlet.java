@@ -32,7 +32,7 @@ public class AreaCheckerServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String xArrayString = req.getParameter("x");
+        String xString = req.getParameter("xValues");
         String yString = req.getParameter("y");
         String rString = req.getParameter("r");
 

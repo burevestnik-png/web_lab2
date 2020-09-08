@@ -1,4 +1,4 @@
-class Toast {
+export default class Toast {
     static errorToast(message) {
         const toastHTML = `<span>${ message }</span>`;
         window.M.toast({
