@@ -27,19 +27,11 @@ public class AreaCheckerServlet extends HttpServlet {
     private static final double MIN_R = 1, MAX_R = 5;
 
 
-    private final HitHistory hitHistory;
-
-
-    public AreaCheckerServlet() {
-        hitHistory = new HitHistory();
-    }
-
-
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String xArrayString = req.getParameter("xValues");
-        String yString = req.getParameter("y");
-        String rString = req.getParameter("r");
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String xArrayString = request.getParameter("xValues");
+        String yString = request.getParameter("y");
+        String rString = request.getParameter("r");
 
         List<Double> xArray = new ArrayList<>();
         double y;
@@ -59,6 +51,8 @@ public class AreaCheckerServlet extends HttpServlet {
             throw new RuntimeException("Wrong type of some arguments");
         }
 
+        HitHistory hitHistory = (HitHistory) request.getAttribute("hitHistory");
+
         for (double x : xArray) {
             Hit hit = new Hit();
             hit.setX(x);
@@ -67,7 +61,7 @@ public class AreaCheckerServlet extends HttpServlet {
             hit.setCurrentDate(ZonedDateTime.now().format(DateTimeFormatter.ofPattern("MM:HH:YY", Locale.forLanguageTag("RU"))));
             hit.setHit(isHit(x, y, r));
 
-            long startTime = Long.parseLong(req.getAttribute("startTime").toString());
+            long startTime = Long.parseLong(request.getAttribute("startTime").toString());
             long endTime = new Date().getTime();
 
             hit.setExecutionTime("" + (endTime - startTime));
@@ -76,12 +70,12 @@ public class AreaCheckerServlet extends HttpServlet {
             LOGGER_ADAPTER.debug("Hit added in history: " + hit);
         }
 
-        req.setAttribute("hitHistory", hitHistory);
         LOGGER_ADAPTER.info("Redirected on /result.jsp");
-        LOGGER_ADAPTER.debug("HitHistory: " + hitHistory);
+        LOGGER_ADAPTER.debug("HitHistory: " + request.getAttribute("hitHistory"));
+        request.setAttribute("lastHit", hitHistory.getHitList().get(hitHistory.getHitList().size() - 1));
         getServletContext()
                 .getRequestDispatcher("/result.jsp")
-                .forward(req, resp);
+                .forward(request, response);
     }
 
     private boolean isHit(double x, double y, double r) {
