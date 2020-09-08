@@ -1,5 +1,6 @@
 package servlets;
 
+import adapter.LoggerAdapter;
 import beans.Hit;
 import beans.HitHistory;
 
@@ -12,11 +13,15 @@ import java.io.IOException;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
 @WebServlet("/result")
 public class AreaCheckerServlet extends HttpServlet {
+    private static final LoggerAdapter LOGGER_ADAPTER = LoggerAdapter.createDefault("AreaCheckerServlet");
+
+
     private static final double MIN_X = -5, MAX_X = 3;
     private static final double MIN_Y = -5, MAX_Y = 3;
     private static final double MIN_R = 1, MAX_R = 5;
@@ -32,7 +37,7 @@ public class AreaCheckerServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String xString = req.getParameter("xValues");
+        String xArrayString = req.getParameter("xValues");
         String yString = req.getParameter("y");
         String rString = req.getParameter("r");
 
@@ -50,6 +55,7 @@ public class AreaCheckerServlet extends HttpServlet {
             y = Double.parseDouble(yString);
             r = Double.parseDouble(rString);
         } catch (NumberFormatException exception) {
+            LOGGER_ADAPTER.errorThrowable("Wrong types of parameters", exception);
             throw new RuntimeException("Wrong type of some arguments");
         }
 
@@ -62,14 +68,17 @@ public class AreaCheckerServlet extends HttpServlet {
             hit.setHit(isHit(x, y, r));
 
             long startTime = Long.parseLong(req.getAttribute("startTime").toString());
-            long endTime = System.currentTimeMillis();
+            long endTime = new Date().getTime();
 
             hit.setExecutionTime("" + (endTime - startTime));
 
             hitHistory.getHitList().add(hit);
+            LOGGER_ADAPTER.debug("Hit added in history: " + hit);
         }
 
         req.setAttribute("hitHistory", hitHistory);
+        LOGGER_ADAPTER.info("Redirected on /result.jsp");
+        LOGGER_ADAPTER.debug("HitHistory: " + hitHistory);
         getServletContext()
                 .getRequestDispatcher("/result.jsp")
                 .forward(req, resp);

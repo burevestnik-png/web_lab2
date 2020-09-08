@@ -27,6 +27,8 @@
 </head>
 <body>
 
+<%@ include file="templates/header.html" %>
+
 <main class="container valign-wrapper">
     <div class="row valign-wrapper" style="margin-top: 3rem;">
         <div class="col s6 center">

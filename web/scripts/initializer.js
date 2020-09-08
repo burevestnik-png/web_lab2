@@ -1,7 +1,7 @@
 import Toast from "./utilities/Toast.js";
 import DataExtractor from "./utilities/DataExtractor.js";
 import Validator from "./utilities/Validator.js";
-import Graph from "./utilities/Graph";
+import Graph from "./utilities/Graph.js";
 
 const KEYS = {
     theme: 'theme'
@@ -46,15 +46,15 @@ const submitHandler = (event) => {
         return;
     }
     Toast.successToast('Data was sent to server');
-    console.log(xValues + " " + y + r + " -- params");
+    console.log(x + " " + y + r + " -- params");
 
     const formData = new FormData();
     formData.append('y', y);
     formData.append('r', r);
-    formData.append('x', xValues.join(' '));
+    formData.append('x', x.join(' '));
 
     $.post('/web/api', {
-        xValues: xValues.join(" "),
+        xValues: x.join(" "),
         y: y,
         r: r
     }, function(data) {

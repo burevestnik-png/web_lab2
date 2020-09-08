@@ -68,4 +68,16 @@ public final class Hit implements Serializable {
     public void setHit(boolean hit) {
         this.hit = hit;
     }
+
+    @Override
+    public String toString() {
+        return "Hit{" +
+                "x=" + x +
+                ", y=" + y +
+                ", r=" + r +
+                ", currentDate='" + currentDate + '\'' +
+                ", executionTime='" + executionTime + '\'' +
+                ", hit=" + hit +
+                '}';
+    }
 }

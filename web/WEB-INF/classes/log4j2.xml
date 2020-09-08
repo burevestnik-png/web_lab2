@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="INFO">
+<Configuration status="DEBUG">
     <Appenders>
         <RollingFile name="logfile"
                      fileName="D:\\Workspaces\\ITMO_Web\\web_lab2\\web\\logs\\logfile.log"
@@ -12,7 +12,7 @@
         </RollingFile>
     </Appenders>
     <Loggers>
-        <Root level="INFO">
+        <Root level="DEBUG">
             <AppenderRef ref="logfile"/>
         </Root>
     </Loggers>
