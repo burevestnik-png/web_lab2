@@ -62,7 +62,10 @@ export default class App {
 
         this.themeBtn.addEventListener('click', this.changeTheme)
 
-        this.clearSvgBtn.addEventListener('click', () => this.graph.clearSvg())
+        this.clearSvgBtn.addEventListener('click', () => {
+            this.graph.clearSvg();
+            Toast.infoToast('Picture was cleared')
+        })
 
         this.resetBtn.addEventListener('click', (event) => {
             event.preventDefault();
@@ -100,7 +103,8 @@ export default class App {
             $('input[name="x-group"]:checked').click();
             this.$yInput.val('')
 
-            /*$.post('/web/api', {
+            Toast.successToast('Data was sent to server');
+            $.post('/web/api', {
                 xValues: clickPoint.x,
                 y: clickPoint.y,
                 r: r
@@ -108,7 +112,7 @@ export default class App {
                 console.log(data);
             })
                 .error(jqXHR => { console.log('Ошибка выполнения'); })
-                .complete(() => { console.log('Завершение выполнения'); });*/
+                .complete(() => { console.log('Завершение выполнения'); });
         })
     }
 

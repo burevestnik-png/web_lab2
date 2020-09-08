@@ -100,13 +100,13 @@
                 </div>
 
                 <div class="col s12 center" style="padding-bottom: 2rem;">
-                    <button class="cyan waves-effect waves-light btn w8 mr1"
+                    <button class="cyan waves-effect waves-light btn w9 mr1"
                             id="submit"
                     >
                         Submit
                         <i class="material-icons right">send</i>
                     </button>
-                    <button class="cyan waves-effect waves-light btn w8"
+                    <button class="cyan waves-effect waves-light btn w9"
                             id="reset"
                     >
                         Reset
