@@ -15,8 +15,7 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
-//    compile files("./libs/logger_adapter-1.0.jar")
-    compile files("./libs/log4j-appserver-2.13.3.jar")
+    compile files("./libs/logger_adapter-1.0.jar")
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.1'
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.13.1'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.10.3'

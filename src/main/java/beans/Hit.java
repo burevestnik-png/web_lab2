@@ -1,6 +1,10 @@
 package beans;
 
-public final class Hit {
+import java.io.Serializable;
+
+public final class Hit implements Serializable {
+    private static final long serialVersionUID = 465789L;
+
     private double x;
     private double y;
     private double r;
@@ -63,5 +67,17 @@ public final class Hit {
 
     public void setHit(boolean hit) {
         this.hit = hit;
+    }
+
+    @Override
+    public String toString() {
+        return "Hit{" +
+                "x=" + x +
+                ", y=" + y +
+                ", r=" + r +
+                ", currentDate='" + currentDate + '\'' +
+                ", executionTime='" + executionTime + '\'' +
+                ", hit=" + hit +
+                '}';
     }
 }

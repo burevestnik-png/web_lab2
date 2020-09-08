@@ -1,0 +1,120 @@
+[INFO ] 2020-09-08 11:42:26.121 [http-nio-8081-exec-23] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53310[0m
+[INFO ] 2020-09-08 11:42:26.128 [http-nio-8081-exec-23] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:42:26.128 [http-nio-8081-exec-23] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:42:26.128 [http-nio-8081-exec-23] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-08 11:42:26.128 [http-nio-8081-exec-23] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:42:26.128 [http-nio-8081-exec-23] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:42:26.128 [http-nio-8081-exec-23] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:42:26.132 [http-nio-8081-exec-23] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='4', hit=false}[0m
+[INFO ] 2020-09-08 11:42:26.132 [http-nio-8081-exec-23] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[INFO ] 2020-09-08 11:44:10.768 [http-nio-8081-exec-30] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53392[0m
+[INFO ] 2020-09-08 11:44:10.769 [http-nio-8081-exec-30] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:44:10.769 [http-nio-8081-exec-30] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:44:10.769 [http-nio-8081-exec-30] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-08 11:44:10.769 [http-nio-8081-exec-30] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:44:10.769 [http-nio-8081-exec-30] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:44:10.769 [http-nio-8081-exec-30] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:44:10.770 [http-nio-8081-exec-30] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='0', hit=false}[0m
+[INFO ] 2020-09-08 11:44:10.770 [http-nio-8081-exec-30] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[INFO ] 2020-09-08 11:44:11.660 [http-nio-8081-exec-31] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53392[0m
+[INFO ] 2020-09-08 11:44:11.660 [http-nio-8081-exec-31] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:44:11.660 [http-nio-8081-exec-31] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:44:11.660 [http-nio-8081-exec-31] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-08 11:44:11.660 [http-nio-8081-exec-31] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:44:11.660 [http-nio-8081-exec-31] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:44:11.660 [http-nio-8081-exec-31] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:44:11.661 [http-nio-8081-exec-31] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='1', hit=false}[0m
+[INFO ] 2020-09-08 11:44:11.661 [http-nio-8081-exec-31] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[INFO ] 2020-09-08 11:44:12.462 [http-nio-8081-exec-12] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53392[0m
+[INFO ] 2020-09-08 11:44:12.462 [http-nio-8081-exec-12] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:44:12.462 [http-nio-8081-exec-12] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:44:12.462 [http-nio-8081-exec-12] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-08 11:44:12.463 [http-nio-8081-exec-12] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:44:12.463 [http-nio-8081-exec-12] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:44:12.463 [http-nio-8081-exec-12] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:44:12.463 [http-nio-8081-exec-12] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='0', hit=false}[0m
+[INFO ] 2020-09-08 11:44:12.463 [http-nio-8081-exec-12] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[INFO ] 2020-09-08 11:44:13.193 [http-nio-8081-exec-22] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53392[0m
+[INFO ] 2020-09-08 11:44:13.193 [http-nio-8081-exec-22] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:44:13.193 [http-nio-8081-exec-22] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:44:13.194 [http-nio-8081-exec-22] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-08 11:44:13.194 [http-nio-8081-exec-22] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:44:13.194 [http-nio-8081-exec-22] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:44:13.194 [http-nio-8081-exec-22] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:44:13.194 [http-nio-8081-exec-22] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='0', hit=false}[0m
+[INFO ] 2020-09-08 11:44:13.194 [http-nio-8081-exec-22] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[INFO ] 2020-09-08 11:46:01.512 [http-nio-8081-exec-30] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53625[0m
+[INFO ] 2020-09-08 11:46:01.518 [http-nio-8081-exec-30] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:46:01.518 [http-nio-8081-exec-30] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:46:01.518 [http-nio-8081-exec-30] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-08 11:46:01.518 [http-nio-8081-exec-30] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:46:01.518 [http-nio-8081-exec-30] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:46:01.518 [http-nio-8081-exec-30] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:46:01.520 [http-nio-8081-exec-30] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='2', hit=false}[0m
+[INFO ] 2020-09-08 11:46:01.520 [http-nio-8081-exec-30] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[INFO ] 2020-09-08 11:46:02.369 [http-nio-8081-exec-34] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53625[0m
+[INFO ] 2020-09-08 11:46:02.369 [http-nio-8081-exec-34] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:46:02.369 [http-nio-8081-exec-34] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:46:02.369 [http-nio-8081-exec-34] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-08 11:46:02.369 [http-nio-8081-exec-34] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:46:02.369 [http-nio-8081-exec-34] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:46:02.369 [http-nio-8081-exec-34] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:46:02.370 [http-nio-8081-exec-34] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='1', hit=false}[0m
+[INFO ] 2020-09-08 11:46:02.370 [http-nio-8081-exec-34] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[INFO ] 2020-09-08 11:46:03.291 [http-nio-8081-exec-35] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53625[0m
+[INFO ] 2020-09-08 11:46:03.291 [http-nio-8081-exec-35] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:46:03.291 [http-nio-8081-exec-35] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:46:03.291 [http-nio-8081-exec-35] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-08 11:46:03.291 [http-nio-8081-exec-35] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:46:03.291 [http-nio-8081-exec-35] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:46:03.291 [http-nio-8081-exec-35] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:46:03.292 [http-nio-8081-exec-35] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='1', hit=false}[0m
+[INFO ] 2020-09-08 11:46:03.292 [http-nio-8081-exec-35] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[INFO ] 2020-09-08 11:46:04.238 [http-nio-8081-exec-25] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53625[0m
+[INFO ] 2020-09-08 11:46:04.238 [http-nio-8081-exec-25] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:46:04.238 [http-nio-8081-exec-25] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:46:04.238 [http-nio-8081-exec-25] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-08 11:46:04.238 [http-nio-8081-exec-25] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:46:04.238 [http-nio-8081-exec-25] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:46:04.238 [http-nio-8081-exec-25] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:46:04.239 [http-nio-8081-exec-25] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='1', hit=false}[0m
+[INFO ] 2020-09-08 11:46:04.239 [http-nio-8081-exec-25] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[INFO ] 2020-09-08 11:46:39.502 [http-nio-8081-exec-32] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53653[0m
+[INFO ] 2020-09-08 11:46:39.502 [http-nio-8081-exec-32] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:46:39.502 [http-nio-8081-exec-32] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:46:39.502 [http-nio-8081-exec-32] ControllerServlet - [37m---xValues : 0 [0m
+[INFO ] 2020-09-08 11:46:39.502 [http-nio-8081-exec-32] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:46:39.502 [http-nio-8081-exec-32] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:46:39.502 [http-nio-8081-exec-32] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:46:39.503 [http-nio-8081-exec-32] AreaCheckerServlet - [34mHit added in history: Hit{x=0.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='1', hit=true}[0m
+[INFO ] 2020-09-08 11:46:39.503 [http-nio-8081-exec-32] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[INFO ] 2020-09-08 11:49:51.221 [http-nio-8081-exec-41] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53819[0m
+[INFO ] 2020-09-08 11:49:51.227 [http-nio-8081-exec-41] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:49:51.227 [http-nio-8081-exec-41] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:49:51.227 [http-nio-8081-exec-41] ControllerServlet - [37m---xValues : 0 [0m
+[INFO ] 2020-09-08 11:49:51.227 [http-nio-8081-exec-41] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:49:51.227 [http-nio-8081-exec-41] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:49:51.227 [http-nio-8081-exec-41] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:49:51.232 [http-nio-8081-exec-41] AreaCheckerServlet - [34mHit added in history: Hit{x=0.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='5', hit=true}[0m
+[INFO ] 2020-09-08 11:49:51.232 [http-nio-8081-exec-41] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-08 11:49:51.232 [http-nio-8081-exec-41] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=0.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='5', hit=true}]}[0m
+[INFO ] 2020-09-08 11:50:31.527 [http-nio-8081-exec-39] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53844[0m
+[INFO ] 2020-09-08 11:50:31.528 [http-nio-8081-exec-39] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:50:31.528 [http-nio-8081-exec-39] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:50:31.528 [http-nio-8081-exec-39] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-08 11:50:31.528 [http-nio-8081-exec-39] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:50:31.528 [http-nio-8081-exec-39] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:50:31.528 [http-nio-8081-exec-39] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:50:31.529 [http-nio-8081-exec-39] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='1', hit=false}[0m
+[INFO ] 2020-09-08 11:50:31.529 [http-nio-8081-exec-39] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-08 11:50:31.529 [http-nio-8081-exec-39] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=0.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='5', hit=true}, Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='1', hit=false}]}[0m
+[INFO ] 2020-09-08 11:50:36.383 [http-nio-8081-exec-40] ControllerServlet - [37mGot request from: 0:0:0:0:0:0:0:1 0:0:0:0:0:0:0:1:53844[0m
+[INFO ] 2020-09-08 11:50:36.383 [http-nio-8081-exec-40] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-08 11:50:36.383 [http-nio-8081-exec-40] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-08 11:50:36.383 [http-nio-8081-exec-40] ControllerServlet - [37m---xValues : -1 [0m
+[INFO ] 2020-09-08 11:50:36.383 [http-nio-8081-exec-40] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-08 11:50:36.383 [http-nio-8081-exec-40] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-08 11:50:36.383 [http-nio-8081-exec-40] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-08 11:50:36.384 [http-nio-8081-exec-40] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='1', hit=true}[0m
+[INFO ] 2020-09-08 11:50:36.384 [http-nio-8081-exec-40] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-08 11:50:36.384 [http-nio-8081-exec-40] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=0.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='5', hit=true}, Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=2.0, currentDate='09:11:20', executionTime='1', hit=true}]}[0m

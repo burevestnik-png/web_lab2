@@ -1,25 +1,28 @@
 package servlets;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import adapter.LoggerAdapter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.lang.reflect.Field;
+import java.util.Date;
 import java.util.Map;
 
 
 @WebServlet("/api")
 public class ControllerServlet extends HttpServlet {
+    private static final LoggerAdapter LOGGER_ADAPTER = LoggerAdapter.createDefault("ControllerServlet");
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        long startTime = System.currentTimeMillis();
+        logRequest(request);
+
+        long startTime = new Date().getTime();
 
         String xString = request.getParameter("xValues");
         String yString = request.getParameter("y");
@@ -68,23 +71,8 @@ public class ControllerServlet extends HttpServlet {
 //
 //        return;
 
-        System.out.println(xString);
-        Logger LOGGER_ADAPTER = LogManager.getLogger("ControllerServlet");
-//        LoggerAdapter LOGGER_ADAPTER = LoggerAdapter.createDefault("ControllerServlet");
-        LOGGER_ADAPTER.info("request: " + request.toString());
-        LOGGER_ADAPTER.info("res: " + response.toString());
-        LOGGER_ADAPTER.info("xString: " + xString);
-        LOGGER_ADAPTER.info("yString: " + yString);
-        LOGGER_ADAPTER.info("rString: " + rString);
-
-        try {
-            System.out.println(printFields(LOGGER_ADAPTER));
-        } catch (IllegalAccessException e) {
-            response.getWriter().println("Error epta");
-            return;
-        }
-
         if (xString == null || yString == null || rString == null) {
+            LOGGER_ADAPTER.info("One of necessary parameters is not presented. Redirected on /index.jsp");
             getServletContext()
                     .getRequestDispatcher("/index.jsp")
                     .forward(request, response);
@@ -92,6 +80,7 @@ public class ControllerServlet extends HttpServlet {
         }
 
         request.setAttribute("startTime", startTime);
+        LOGGER_ADAPTER.info("Redirected on /result");
         getServletContext()
                 .getRequestDispatcher("/result")
                 .forward(request, response);
@@ -122,9 +111,24 @@ public class ControllerServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        logRequest(request);
+
         getServletContext()
                 .getRequestDispatcher("/index.jsp")
-                .forward(req, resp);
+                .forward(request, response);
+    }
+
+    private void logRequest(HttpServletRequest request) {
+        LOGGER_ADAPTER.info("Got request from: " + request.getRemoteHost() + " " + request.getRemoteAddr() + ":" + request.getRemotePort());
+        LOGGER_ADAPTER.info(request.getMethod());
+        LOGGER_ADAPTER.info("Params: ");
+        for (Map.Entry<String, String[]> record : request.getParameterMap().entrySet()) {
+            String log = record.getKey() + " : ";
+            for (String parameter : record.getValue()) {
+                log += parameter + " ";
+            }
+            LOGGER_ADAPTER.info("---" + log);
+        }
     }
 }
