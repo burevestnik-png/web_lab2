@@ -1,6 +1,7 @@
 package servlets;
 
 import adapter.LoggerAdapter;
+import beans.HitHistory;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,6 +17,13 @@ import java.util.Map;
 @WebServlet("/api")
 public class ControllerServlet extends HttpServlet {
     private static final LoggerAdapter LOGGER_ADAPTER = LoggerAdapter.createDefault("ControllerServlet");
+
+    private final HitHistory hitHistory;
+
+
+    public ControllerServlet() {
+        hitHistory = new HitHistory();
+    }
 
 
     @Override
@@ -73,6 +81,7 @@ public class ControllerServlet extends HttpServlet {
 
         if (xString == null || yString == null || rString == null) {
             LOGGER_ADAPTER.info("One of necessary parameters is not presented. Redirected on /index.jsp");
+            request.setAttribute("hitHistory", hitHistory);
             getServletContext()
                     .getRequestDispatcher("/index.jsp")
                     .forward(request, response);
@@ -80,6 +89,7 @@ public class ControllerServlet extends HttpServlet {
         }
 
         request.setAttribute("startTime", startTime);
+        request.setAttribute("hitHistory", hitHistory);
         LOGGER_ADAPTER.info("Redirected on /result");
         getServletContext()
                 .getRequestDispatcher("/result")
