@@ -111,7 +111,7 @@ export default class App {
             }, (data) => {
                 console.log(data);
             })
-                .error(jqXHR => { console.log('Ошибка выполнения'); })
+                // .error(jqXHR => { console.log('Ошибка выполнения'); })
                 .complete(() => { console.log('Завершение выполнения'); });
         })
     }

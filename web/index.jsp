@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8"
          language="java"
          pageEncoding="utf-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%
     String[] checkboxValues = {"-5", "-4", "-3", "-2", "-1", "&nbsp;0", "&nbsp;1", "&nbsp;2", "&nbsp;3"};
@@ -20,14 +21,15 @@
     <link type="text/css"
           rel="stylesheet"
           href="${pageContext.request.contextPath}/stylesheets/utility_classes.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/favicon/favicon.ico">
 </head>
 <body>
 
-<jsp:include page="templates/header.html" />
+<jsp:include page="templates/header.html"/>
 
 <main class="container">
     <div class="row valign-wrapper" style="margin-top: 3rem;">
@@ -116,6 +118,34 @@
             </form>
         </div>
     </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>X</th>
+            <th>Y</th>
+            <th>R</th>
+            <th>EXECUTION TIME</th>
+            <th>RESULT</th>
+        </tr>
+        </thead>
+
+        <jsp:useBean id="hitList"
+                     scope="session"
+                     class="beans.HitHistory"/>
+        <tbody>
+        <c:forEach var="hit"
+                   items="${hitList.getHitList()}">
+            <tr>
+                <td>${hit.getX()}</td>
+                <td>${hit.getY()}</td>
+                <td>${hit.getR()}</td>
+                <td>${hit.getExecutionTime()}</td>
+                <td>${hit.isHit()}</td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
 </main>
 
 <jsp:include page="/templates/footer.html"/>
