@@ -1,24 +1,28 @@
 export default class Graph {
-    $dotTarget
     svgPoint
 
     constructor() {
-        this.$dotTarget = $('#target-dot');
         this.svgPoint = document.querySelector('svg').createSVGPoint();
     }
 
-    changeDotRadius(radius) {
-        this.$dotTarget.attr('r', radius);
-    }
-
-    changeDotPosition(x, y, r,
-                             isCalculated = false,
-                             radius = 3) {
+    drawDots(x, y, r,
+             isCalculated = false,
+             radius = 3) {
         const relativeUnit = 100 / r;
 
-        this.changeDotRadius(radius);
-        this.$dotTarget.attr("cy", isCalculated ? y : 150 - relativeUnit * y);
-        this.$dotTarget.attr("cx", isCalculated ? x : 150 + relativeUnit * x);
+        const svgns = "http://www.w3.org/2000/svg"
+        const container = document.getElementById( 'svg' );
+
+        x.forEach((value) => {
+            const dot = document.createElementNS(svgns, 'circle');
+            dot.setAttributeNS(null, 'cx', isCalculated ? value : 150 + relativeUnit * value);
+            dot.setAttributeNS(null, 'cy', isCalculated? y : 150 - relativeUnit * y);
+            dot.setAttributeNS(null, 'class', "target-dot");
+            dot.setAttributeNS(null, 'r', radius.toString());
+            dot.setAttributeNS(null, 'style', 'fill: white; stroke: black;');
+
+            container.appendChild(dot);
+        })
     }
 
     getClickPoint(event) {

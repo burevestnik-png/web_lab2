@@ -44,7 +44,8 @@ export default class App {
                 return;
             }
             Toast.successToast('Data was sent to server');
-            console.log(x + " " + y + r + " -- params");
+
+            this.graph.drawDots(x, y, r, false)
 
             $.post('/web/api', {
                 xValues: x.join(" "),
@@ -81,26 +82,29 @@ export default class App {
 
         $('svg').on('click', ( event ) => {
             const clickPoint = this.graph.getClickPoint(event);
-            this.modal.open();
 
             const r = DataExtractor.getR();
             if (r === undefined) {
-
+                this.modal.open(
+                    "Oops",
+                    "It seems that you hadn't chosen R value"
+                )
+                return;
             }
 
-            /*this.graphicsService.changeDotPosition(clickPoint.x, clickPoint.y, this.currentRValue, true)
-            $('#y-value').val('');
-            $('.y-value-label').removeClass('active-input');
-            $('input[name="x-group"]:checked').prop('checked', false);
+            this.graph.drawDots([clickPoint.x], clickPoint.y, r, true)
+            $('input[name="x-group"]:checked').click();
+            this.$yInput.val('')
 
-            fetch(`${ this.config.get('SERVER_PATH') }hit.php`, {
-                method: 'POST',
-                body: this.formRequestFromClick(clickPoint.x, clickPoint.y, this.currentRValue)
+            /*$.post('/web/api', {
+                xValues: clickPoint.x,
+                y: clickPoint.y,
+                r: r
+            }, (data) => {
+                console.log(data);
             })
-                .then(response => response.text())
-                .then(data => {
-
-                });*/
+                .error(jqXHR => { console.log('Ошибка выполнения'); })
+                .complete(() => { console.log('Завершение выполнения'); });*/
         })
     }
 
@@ -109,7 +113,8 @@ export default class App {
             document.querySelector('.nav-wrapper'),
             document.querySelector('footer'),
             document.getElementById('submit'),
-            document.getElementById('reset')
+            document.getElementById('reset'),
+            document.getElementById('modal-btn')
         ]
 
         document.body.classList.toggle('dark-theme')

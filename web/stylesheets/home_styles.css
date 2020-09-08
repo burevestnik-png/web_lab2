@@ -29,19 +29,21 @@ line {
 }
 
 p:not(.footer-paragraph),
-input[type=text] {
+input[type=text],
+h4 {
     transition: color 400ms;
     color: var(--text-color);
 }
 
-.modal {
-    transition: background-color 400ms;
+.modal,
+.modal-footer {
     background-color: var(--bkg-color) !important;
 }
 
 .nav-wrapper,
 footer,
-button {
+button,
+a {
     transition: background-color 400ms;
 }
 
