@@ -25,6 +25,10 @@ export default class Graph {
         })
     }
 
+    clearSvg() {
+        document.querySelectorAll('.target-dot').forEach(value => value.remove());
+    }
+
     getClickPoint(event) {
         this.svgPoint.x = event.clientX;
         this.svgPoint.y = event.clientY;

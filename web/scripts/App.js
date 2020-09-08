@@ -10,8 +10,10 @@ export default class App {
         this.graph = graph;
 
         this.themeBtn = document.getElementById('theme-btn')
-        this.submitBtn = document.getElementById('submit');
-        this.resetBtn = document.getElementById('reset');
+        this.submitBtn = document.getElementById('submit')
+        this.resetBtn = document.getElementById('reset')
+        this.clearSvgBtn = document.getElementById('clear-svg')
+
         this.$rGroupButtons = $('.r-btn')
         this.$currentR = $('#current-r')
         this.$xCheckBoxes = $('input[name="x-group"]');
@@ -59,6 +61,8 @@ export default class App {
         })
 
         this.themeBtn.addEventListener('click', this.changeTheme)
+
+        this.clearSvgBtn.addEventListener('click', () => this.graph.clearSvg())
 
         this.resetBtn.addEventListener('click', (event) => {
             event.preventDefault();
@@ -114,8 +118,9 @@ export default class App {
             document.querySelector('footer'),
             document.getElementById('submit'),
             document.getElementById('reset'),
-            document.getElementById('modal-btn')
-        ]
+            document.getElementById('modal-btn'),
+            document.getElementById('clear-svg')
+        ];
 
         document.body.classList.toggle('dark-theme')
         themeElements.forEach(value => value.classList.toggle('darken-4'))

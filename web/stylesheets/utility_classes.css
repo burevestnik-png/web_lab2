@@ -21,3 +21,7 @@
 .w5 {
     width: 5rem;
 }
+
+.no-select {
+    user-select: none;
+}

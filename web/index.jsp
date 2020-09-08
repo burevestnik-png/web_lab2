@@ -29,11 +29,19 @@
 
 <jsp:include page="templates/header.html" />
 
-<main class="container valign-wrapper">
+<main class="container">
     <div class="row valign-wrapper" style="margin-top: 3rem;">
         <div class="col s6 center">
-            <%@ include file="templates/svg.html" %>
-<%--            <jsp:include page="templates/svg.html"/>--%>
+            <div>
+                <jsp:include page="templates/svg.html"/>
+            </div>
+            <button class="cyan waves-effect waves-light btn"
+                    id="clear-svg"
+                    style="margin-top: 2rem;"
+            >
+                Clear
+                <i class="material-icons right">delete</i>
+            </button>
         </div>
 
         <div class="col s6 row main-border hoverable">
