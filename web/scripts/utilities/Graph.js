@@ -1,12 +1,17 @@
 export default class Graph {
-    static $dotTarget = $('#target-dot');
-    static svgPoint = document.querySelector('svg').createSVGPoint();
+    $dotTarget
+    svgPoint
 
-    static changeDotRadius(radius) {
+    constructor() {
+        this.$dotTarget = $('#target-dot');
+        this.svgPoint = document.querySelector('svg').createSVGPoint();
+    }
+
+    changeDotRadius(radius) {
         this.$dotTarget.attr('r', radius);
     }
 
-    static changeDotPosition(x, y, r,
+    changeDotPosition(x, y, r,
                              isCalculated = false,
                              radius = 3) {
         const relativeUnit = 100 / r;
@@ -16,7 +21,7 @@ export default class Graph {
         this.$dotTarget.attr("cx", isCalculated ? x : 150 + relativeUnit * x);
     }
 
-    static getClickPoint(event) {
+    getClickPoint(event) {
         this.svgPoint.x = event.clientX;
         this.svgPoint.y = event.clientY;
 

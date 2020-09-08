@@ -27,6 +27,8 @@
 </head>
 <body>
 
+<jsp:include page="templates/header.html" />
+
 <main class="container valign-wrapper">
     <div class="row valign-wrapper" style="margin-top: 3rem;">
         <div class="col s6 center">
@@ -116,6 +118,6 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous">
 </script>
-<script type="module" src="${pageContext.request.contextPath}/scripts/initializer.js"></script>
+<script type="module" src="${pageContext.request.contextPath}/scripts/index.js"></script>
 </body>
 </html>
