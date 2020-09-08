@@ -1,10 +1,12 @@
-import Toast from "./utilities/Toast.js";
-import DataExtractor from "./utilities/DataExtractor.js";
-import Validator from "./utilities/Validator.js";
+import Toast from "./utilities/components/Toast.js";
+import DataExtractor from "./utilities/services/DataExtractor.js";
+import Validator from "./utilities/services/Validator.js";
+import ModalWindow from "./utilities/components/Modal.js";
 
 export default class App {
+    modal;
+
     constructor(graph) {
-        debugger
         this.graph = graph;
 
         this.themeBtn = document.getElementById('theme-btn')
@@ -14,18 +16,14 @@ export default class App {
         this.$currentR = $('#current-r')
         this.$xCheckBoxes = $('input[name="x-group"]');
         this.$yInput = $('#y-value')
-
-        this.KEYS = {
-            theme: 'theme'
-        }
     }
 
     init() {
         document.addEventListener("DOMContentLoaded", () => {
-            const theme = localStorage.getItem(this.KEYS.theme);
+            const theme = localStorage.getItem('theme');
 
             if (!theme) {
-                localStorage.setItem(this.KEYS.theme, 'white');
+                localStorage.setItem('theme', 'white');
                 return;
             }
 
@@ -33,6 +31,8 @@ export default class App {
                 this.changeTheme({}, true);
                 this.themeBtn.checked = true;
             }
+
+            this.modal = new ModalWindow();
         });
 
         this.submitBtn.addEventListener('click', event => {
@@ -81,6 +81,7 @@ export default class App {
 
         $('svg').on('click', ( event ) => {
             const clickPoint = this.graph.getClickPoint(event);
+            this.modal.open();
 
             const r = DataExtractor.getR();
             if (r === undefined) {
@@ -119,8 +120,8 @@ export default class App {
             Toast.infoToast('Theme was changed')
 
             localStorage.setItem(
-                this.KEYS.theme,
-                localStorage.getItem(this.KEYS.theme) === 'dark' ? 'white' : 'dark'
+                'theme',
+                localStorage.getItem('theme') === 'dark' ? 'white' : 'dark'
             )
         }
     }

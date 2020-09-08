@@ -1,4 +1,4 @@
-import Toast from "./Toast.js";
+import Toast from "../components/Toast.js";
 
 export default class Validator {
     static isInputValid(x, y, r) {

@@ -34,6 +34,11 @@ input[type=text] {
     color: var(--text-color);
 }
 
+.modal {
+    transition: background-color 400ms;
+    background-color: var(--bkg-color) !important;
+}
+
 .nav-wrapper,
 footer,
 button {
