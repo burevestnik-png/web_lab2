@@ -63,9 +63,12 @@
 
     <a href="${pageContext.request.contextPath}/"
        class="btn cyan"
+       id="go-back"
     >Go back</a>
 </main>
 
 <jsp:include page="templates/footer.html" />
+
+<script type="module" src="${pageContext.request.contextPath}/scripts/result-page/index.js"></script>
 </body>
 </html>
