@@ -58,6 +58,7 @@ public class ControllerServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         logRequest(request);
 
+        request.setAttribute("hitHistory", hitHistory);
         getServletContext()
                 .getRequestDispatcher("/index.jsp")
                 .forward(request, response);

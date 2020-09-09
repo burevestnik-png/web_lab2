@@ -202,3 +202,27 @@
 [INFO ] 2020-09-09 15:49:44.090 [http-nio-8081-exec-36] ControllerServlet - [37m---xValues : 116.78125 [0m
 [INFO ] 2020-09-09 15:49:44.091 [http-nio-8081-exec-36] ControllerServlet - [37m---y : 94.015625 [0m
 [INFO ] 2020-09-09 15:49:44.091 [http-nio-8081-exec-36] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-09 16:02:18.529 [default task-2] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:60902[0m
+[INFO ] 2020-09-09 16:02:18.532 [default task-2] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-09 16:02:18.532 [default task-2] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-09 16:02:18.539 [default task-2] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-09 16:02:18.539 [default task-2] ControllerServlet - [37m---x : -4 [0m
+[INFO ] 2020-09-09 16:02:18.539 [default task-2] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-09 16:02:18.539 [default task-2] ControllerServlet - [37mOne of necessary parameters is not presented. Redirected on /index.jsp[0m
+[INFO ] 2020-09-09 16:03:32.617 [default task-2] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:60969[0m
+[INFO ] 2020-09-09 16:03:32.617 [default task-2] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-09 16:03:32.617 [default task-2] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-09 16:03:32.618 [default task-2] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-09 16:03:32.618 [default task-2] ControllerServlet - [37m---x : -4 -1 [0m
+[INFO ] 2020-09-09 16:03:32.618 [default task-2] ControllerServlet - [37m---y : 3 [0m
+[INFO ] 2020-09-09 16:03:32.618 [default task-2] ControllerServlet - [37mOne of necessary parameters is not presented. Redirected on /index.jsp[0m
+[INFO ] 2020-09-09 16:04:30.217 [default task-2] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:60969[0m
+[INFO ] 2020-09-09 16:04:30.217 [default task-2] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-09 16:04:30.218 [default task-2] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-09 16:04:30.218 [default task-2] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-09 16:04:30.218 [default task-2] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-09 16:04:30.218 [default task-2] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-09 16:04:30.218 [default task-2] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-09 16:04:30.225 [default task-2] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:16:20', executionTime='7', hit=false}[0m
+[INFO ] 2020-09-09 16:04:30.225 [default task-2] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-09 16:04:30.225 [default task-2] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:16:20', executionTime='7', hit=false}]}[0m
