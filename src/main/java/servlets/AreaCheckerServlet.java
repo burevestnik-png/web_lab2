@@ -72,6 +72,7 @@ public class AreaCheckerServlet extends HttpServlet {
 
         LOGGER_ADAPTER.info("Redirected on /result.jsp");
         LOGGER_ADAPTER.debug("HitHistory: " + request.getAttribute("hitHistory"));
+        LOGGER_ADAPTER.debug("LastHit: " + hitHistory.getHitList().get(hitHistory.getHitList().size() - 1));
         request.setAttribute("lastHit", hitHistory.getHitList().get(hitHistory.getHitList().size() - 1));
         getServletContext()
                 .getRequestDispatcher("/result.jsp")

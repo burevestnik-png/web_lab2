@@ -61,7 +61,7 @@
         </table>
     </div>
 
-    <a href="${pageContext.request.contextPath}/"
+    <a href="${pageContext.request.contextPath}/api"
        class="btn cyan"
        id="go-back"
     >Go back</a>
