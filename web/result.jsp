@@ -33,7 +33,7 @@
           href="${pageContext.request.contextPath}/assets/favicon/favicon.ico"
     >
 </head>
-<body>
+<body onload="init()">
 <jsp:include page="templates/header.html" />
 
 <main class="container valign-wrapper" style="display:flex; flex-direction: column">
@@ -43,7 +43,9 @@
     />
 
     <div style="width: 100%;">
-        <table class="centered highlight" style="margin: 2rem 0 3rem">
+        <table class="centered highlight"
+               style="margin: 2rem 0 3rem"
+        >
             <thead>
             <tr>
                 <th>X</th>
@@ -75,7 +77,7 @@
         </table>
     </div>
 
-    <a href="${pageContext.request.contextPath}/api"
+    <a href="${pageContext.request.contextPath}/"
        class="btn cyan"
        id="go-back"
     >Go back</a>
@@ -83,6 +85,42 @@
 
 <jsp:include page="templates/footer.html" />
 
-<script type="module" src="${pageContext.request.contextPath}/scripts/result-page/index.js"></script>
+<script type="text/javascript">
+    const init = () => {
+        const themeBtn = document.getElementById('theme-btn');
+        const theme = localStorage.getItem('theme');
+
+        if (!theme) {
+            localStorage.setItem('theme', 'white');
+            return;
+        }
+
+        if (theme === 'dark') {
+            changeTheme({}, true);
+            themeBtn.checked = true;
+        }
+
+        themeBtn.addEventListener('click', ev => console.log('sdsdsd'))
+    }
+
+    const changeTheme = ( event, isDark = false ) => {
+        const themeElements = [
+            document.querySelector('.nav-wrapper'),
+            document.querySelector('footer'),
+            document.getElementById('go-back')
+        ];
+
+        document.body.classList.toggle('dark-theme')
+        themeElements.forEach(value => value.classList.toggle('darken-4'))
+        document.querySelectorAll('.r-btn').forEach(value => value.classList.toggle('darken-4'))
+
+        if (!isDark) {
+            localStorage.setItem(
+                'theme',
+                localStorage.getItem('theme') === 'dark' ? 'white' : 'dark'
+            )
+        }
+    }
+</script>
 </body>
 </html>

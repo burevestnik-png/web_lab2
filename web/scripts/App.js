@@ -35,6 +35,15 @@ export default class App {
             }
 
             this.modal = new ModalWindow();
+
+            fetch('/web/api', {
+                method: 'GET'
+            })
+                .then(response => response.text())
+                .then(data => {
+                     document.querySelector('table').innerHTML =
+                         data.match(/(?<=<[Tt][Aa][Bb][Ll][Ee] class="centered highlight" style="margin: 2rem 0 3rem">)([\s\S]*?)(?=<\/[Tt][Aa][Bb][Ll][Ee]>)/)[0];
+                })
         });
 
         this.submitBtn.addEventListener('click', event => {
@@ -60,8 +69,6 @@ export default class App {
             })
                 .then(response => response.text())
                 .then(data => {
-                    // document.querySelector('table').innerHTML =
-                    //     data.match(/(?<=<[Tt][Aa][Bb][Ll][Ee] class="centered highlight" style="margin: 2rem 0 3rem">)([\s\S]*?)(?=<\/[Tt][Aa][Bb][Ll][Ee]>)/)[0];
                     document.write(data);
                 })
         });
@@ -122,8 +129,7 @@ export default class App {
             })
                 .then(response => response.text())
                 .then(data => {
-                    document.querySelector('table').innerHTML =
-                        data.match(/(?<=<[Tt][Aa][Bb][Ll][Ee] class="centered highlight" style="margin: 2rem 0 3rem">)([\s\S]*?)(?=<\/[Tt][Aa][Bb][Ll][Ee]>)/)[0];
+                    document.write(data);
                 })
 
             Toast.successToast('Data was sent to server');
