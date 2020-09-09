@@ -49,20 +49,18 @@ export default class App {
 
             this.graph.drawDots(x, y, r, false)
 
-            $.post('/web/api', {
-                xValues: x.join(" "),
-                y: y,
-                r: r
-            }, ( data ) => {
-                console.log(data);
+            const formData = new FormData();
+            formData.append("y", y);
+            formData.append("r", r);
+            formData.append("x", x.join(" "));
+
+            fetch('/web/api',{
+               method: 'POST',
+               body: formData
             })
-                .error(jqXHR => {
-                    console.log('Ошибка выполнения');
-                })
-                .complete(() => {
-                    console.log('Завершение выполнения');
-                });
-        })
+                .then(response => response.text())
+                .then(data => console.log(data))
+        });
 
         this.themeBtn.addEventListener('click', this.changeTheme)
 
@@ -107,18 +105,19 @@ export default class App {
             $('input[name="x-group"]:checked').click();
             this.$yInput.val('')
 
-            Toast.successToast('Data was sent to server');
-            $.post('/web/api', {
-                xValues: clickPoint.x,
-                y: clickPoint.y,
-                r: r
-            }, ( data ) => {
-                console.log(data);
+            const formData = new FormData();
+            formData.append("xValues", clickPoint.x);
+            formData.append("y", clickPoint.y);
+            formData.append("r", r);
+
+            fetch('/web/api',{
+                method: 'POST',
+                body: formData
             })
-                // .error(jqXHR => { console.log('Ошибка выполнения'); })
-                .complete(() => {
-                    console.log('Завершение выполнения');
-                });
+                .then(response => response.text())
+                .then(data => console.log(data));
+
+            Toast.successToast('Data was sent to server');
         })
     }
 
