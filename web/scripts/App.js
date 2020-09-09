@@ -52,11 +52,11 @@ export default class App {
             const formData = new FormData();
             formData.append("y", y);
             formData.append("r", r);
-            formData.append("x", x.join(" "));
+            formData.append("xValues", x.join(" "));
 
-            fetch('/web/api',{
-               method: 'POST',
-               body: formData
+            fetch('/web/api', {
+                method: 'POST',
+                body: formData
             })
                 .then(response => response.text())
                 .then(data => console.log(data))
@@ -105,12 +105,14 @@ export default class App {
             $('input[name="x-group"]:checked').click();
             this.$yInput.val('')
 
+            const relativeUnit = 100 / r;
+
             const formData = new FormData();
-            formData.append("xValues", clickPoint.x);
-            formData.append("y", clickPoint.y);
+            formData.append("xValues", `${  (clickPoint.x - 150) / relativeUnit }`);
+            formData.append("y", `${ ( 150 - clickPoint.y ) / relativeUnit }`);
             formData.append("r", r);
 
-            fetch('/web/api',{
+            fetch('/web/api', {
                 method: 'POST',
                 body: formData
             })
