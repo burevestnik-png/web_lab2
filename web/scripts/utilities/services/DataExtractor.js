@@ -23,7 +23,7 @@ export default class DataExtractor {
         return this.r;
     }
 
-    static setR(r) {
+    static setR( r ) {
         this.r = r;
     }
 

@@ -1,27 +1,27 @@
 .mt3 {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .mr1 {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .center {
-    margin: auto;
+  margin: auto;
 }
 
 .grid {
-    display: grid;
+  display: grid;
 }
 
 .w9 {
-    width: 9rem;
+  width: 9rem;
 }
 
 .w5 {
-    width: 5rem;
+  width: 5rem;
 }
 
 .no-select {
-    user-select: none;
+  user-select: none;
 }

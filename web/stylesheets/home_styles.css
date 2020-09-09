@@ -1,92 +1,92 @@
 :root {
-    box-sizing: border-box;
-    --main-color: #00bcd4;
-    --bkg-color: white;
-    --text-color: black;
+  box-sizing: border-box;
+  --main-color: #00bcd4;
+  --bkg-color: white;
+  --text-color: black;
 }
 
 *,
 ::before,
 ::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body.dark-theme {
-    --bkg-color: #212121;
-    --text-color: white;
-    --main-color: #006064;
+  --bkg-color: #212121;
+  --text-color: white;
+  --main-color: #006064;
 }
 
 text,
 .svg-arrow {
-    transition: fill 400ms;
-    fill: var(--text-color);
+  transition: fill 400ms;
+  fill: var(--text-color);
 }
 
 line {
-    transition: stroke 400ms;
-    stroke: var(--text-color);
+  transition: stroke 400ms;
+  stroke: var(--text-color);
 }
 
 p:not(.footer-paragraph),
 input[type=text],
 h4 {
-    transition: color 400ms;
-    color: var(--text-color);
+  transition: color 400ms;
+  color: var(--text-color);
 }
 
 .modal,
 .modal-footer {
-    background-color: var(--bkg-color) !important;
+  background-color: var(--bkg-color) !important;
 }
 
 .nav-wrapper,
 footer,
 button,
 a {
-    transition: background-color 400ms;
+  transition: background-color 400ms;
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 
-    transition: background-color 400ms;
-    background-color: var(--bkg-color);
+  transition: background-color 400ms;
+  background-color: var(--bkg-color);
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .main-border {
-    border: 2px solid var(--main-color);
-    border-radius: 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
 }
 
-.switch label input[type=checkbox]:checked+.lever:after {
-    background-color: #0994a7;
+.switch label input[type=checkbox]:checked + .lever:after {
+  background-color: #0994a7;
 }
 
 img {
-    height: 5rem;
+  height: 5rem;
 }
 
 .x-group {
-    display: grid;
-    grid-template-columns: repeat(3, 6rem);
-    row-gap: .7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  row-gap: .7rem;
 
-    justify-content: center;
+  justify-content: center;
 }
 
 input[type="checkbox"].filled-in:checked + span:not(.lever):after {
-    border: 2px solid var(--main-color);
-    background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
 }
 
 .input-field input[type=text]:focus {
-    border-bottom: 1px solid var(--main-color) !important;
-    box-shadow: 0 1px 0 0 var(--main-color) !important;
+  border-bottom: 1px solid var(--main-color) !important;
+  box-shadow: 0 1px 0 0 var(--main-color) !important;
 }

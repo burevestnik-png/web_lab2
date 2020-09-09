@@ -1,7 +1,7 @@
 import Toast from "../components/Toast.js";
 
 export default class Validator {
-    static isInputValid(x, y, r) {
+    static isInputValid( x, y, r ) {
         const errors = [];
 
         if (x.length === 0) {
@@ -17,7 +17,7 @@ export default class Validator {
         }
 
         if (errors.length !== 0) {
-            errors.forEach((error, index) => {
+            errors.forEach(( error, index ) => {
                 setTimeout(() => Toast.errorToast(error), index * 300)
             });
             return false;

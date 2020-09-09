@@ -6,7 +6,7 @@ export default class ModalWindow {
         });
     }
 
-    open(header = 'mok', content = 'mok') {
+    open( header = 'mok', content = 'mok' ) {
         const nodes = this.instance.el.children[0].children;
         nodes[0].innerText = header;
         nodes[1].innerText = content;

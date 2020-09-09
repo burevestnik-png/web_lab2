@@ -6,7 +6,7 @@ import ModalWindow from "./utilities/components/Modal.js";
 export default class App {
     modal;
 
-    constructor(graph) {
+    constructor( graph ) {
         this.graph = graph;
 
         this.themeBtn = document.getElementById('theme-btn')
@@ -40,7 +40,7 @@ export default class App {
         this.submitBtn.addEventListener('click', event => {
             event.preventDefault();
 
-            const {x, y, r} = DataExtractor.getValues();
+            const { x, y, r } = DataExtractor.getValues();
 
             if (!Validator.isInputValid(x, y, r)) {
                 return;
@@ -53,11 +53,15 @@ export default class App {
                 xValues: x.join(" "),
                 y: y,
                 r: r
-            }, (data) => {
+            }, ( data ) => {
                 console.log(data);
             })
-                .error(jqXHR => { console.log('Ошибка выполнения'); })
-                .complete(() => { console.log('Завершение выполнения'); });
+                .error(jqXHR => {
+                    console.log('Ошибка выполнения');
+                })
+                .complete(() => {
+                    console.log('Завершение выполнения');
+                });
         })
 
         this.themeBtn.addEventListener('click', this.changeTheme)
@@ -67,7 +71,7 @@ export default class App {
             Toast.infoToast('Picture was cleared')
         })
 
-        this.resetBtn.addEventListener('click', (event) => {
+        this.resetBtn.addEventListener('click', ( event ) => {
             event.preventDefault();
 
             DataExtractor.setR(undefined);
@@ -83,7 +87,7 @@ export default class App {
             this.$currentR.text(Number(event.target.innerText))
         });
 
-        this.$xCheckBoxes.on('click', function() {
+        this.$xCheckBoxes.on('click', function () {
             this.checked ? $(this).attr('checked', true) : $(this).attr('checked', false)
         })
 
@@ -99,7 +103,7 @@ export default class App {
                 return;
             }
 
-            this.graph.drawDots([clickPoint.x], clickPoint.y, r, true)
+            this.graph.drawDots([ clickPoint.x ], clickPoint.y, r, true)
             $('input[name="x-group"]:checked').click();
             this.$yInput.val('')
 
@@ -108,15 +112,17 @@ export default class App {
                 xValues: clickPoint.x,
                 y: clickPoint.y,
                 r: r
-            }, (data) => {
+            }, ( data ) => {
                 console.log(data);
             })
                 // .error(jqXHR => { console.log('Ошибка выполнения'); })
-                .complete(() => { console.log('Завершение выполнения'); });
+                .complete(() => {
+                    console.log('Завершение выполнения');
+                });
         })
     }
 
-    changeTheme(event, isDark = false) {
+    changeTheme( event, isDark = false ) {
         const themeElements = [
             document.querySelector('.nav-wrapper'),
             document.querySelector('footer'),

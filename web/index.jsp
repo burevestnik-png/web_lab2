@@ -1,7 +1,10 @@
 <%@ page contentType="text/html; charset=UTF-8"
          language="java"
-         pageEncoding="utf-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+         pageEncoding="utf-8"
+%>
+<%@ taglib prefix="c"
+           uri="http://java.sun.com/jsp/jstl/core"
+%>
 
 <%
     String[] checkboxValues = {"-5", "-4", "-3", "-2", "-1", "&nbsp;0", "&nbsp;1", "&nbsp;2", "&nbsp;3"};
@@ -14,28 +17,38 @@
 
     <link type="text/css"
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    >
     <link type="text/css"
           rel="stylesheet"
-          href="${pageContext.request.contextPath}/stylesheets/home_styles.css">
+          href="${pageContext.request.contextPath}/stylesheets/home_styles.css"
+    >
     <link type="text/css"
           rel="stylesheet"
-          href="${pageContext.request.contextPath}/stylesheets/utility_classes.css">
+          href="${pageContext.request.contextPath}/stylesheets/utility_classes.css"
+    >
     <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+    >
 
-    <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/favicon/favicon.ico">
+    <link rel="shortcut icon"
+          href="${pageContext.request.contextPath}/assets/favicon/favicon.ico"
+    >
 </head>
 <body>
 
-<jsp:include page="templates/header.html"/>
+<jsp:include page="templates/header.html" />
 
 <main class="container">
-    <div class="row valign-wrapper" style="margin-top: 3rem;">
+    <div class="row valign-wrapper"
+         style="margin-top: 3rem;"
+    >
         <div class="col s6 center">
             <div>
-                <jsp:include page="templates/svg.html"/>
+                <jsp:include page="templates/svg.html" />
             </div>
             <button class="cyan waves-effect waves-light btn"
                     id="clear-svg"
@@ -78,7 +91,9 @@
                     </div>
                 </div>
 
-                <div class="col s12" style="margin: 3rem 0 2.5rem;">
+                <div class="col s12"
+                     style="margin: 3rem 0 2.5rem;"
+                >
                     <p class="center-align">Choose R value:</p>
                     <div class="center">
                         <%
@@ -101,7 +116,9 @@
                     </p>
                 </div>
 
-                <div class="col s12 center" style="padding-bottom: 2rem;">
+                <div class="col s12 center"
+                     style="padding-bottom: 2rem;"
+                >
                     <button class="cyan waves-effect waves-light btn w9 mr1"
                             id="submit"
                     >
@@ -132,10 +149,12 @@
 
         <jsp:useBean id="hitList"
                      scope="session"
-                     class="beans.HitHistory"/>
+                     class="beans.HitHistory"
+        />
         <tbody>
         <c:forEach var="hit"
-                   items="${hitList.getHitList()}">
+                   items="${hitList.getHitList()}"
+        >
             <tr>
                 <td>${hit.getX()}</td>
                 <td>${hit.getY()}</td>
@@ -148,14 +167,17 @@
     </table>
 </main>
 
-<jsp:include page="/templates/footer.html"/>
-<jsp:include page="/templates/modal.html"/>
+<jsp:include page="/templates/footer.html" />
+<jsp:include page="/templates/modal.html" />
 
 <script type="text/javascript"
         src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous">
+        crossorigin="anonymous"
+>
 </script>
-<script type="module" src="${pageContext.request.contextPath}/scripts/index.js"></script>
+<script type="module"
+        src="${pageContext.request.contextPath}/scripts/index.js"
+></script>
 </body>
 </html>
