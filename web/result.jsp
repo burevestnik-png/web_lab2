@@ -1,6 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8"
          language="java"
 %>
+<%@ taglib prefix="c"
+           uri="http://java.sun.com/jsp/jstl/core"
+%>
+
 <html>
 <head>
     <title>Result</title>
@@ -33,9 +37,9 @@
 <jsp:include page="templates/header.html" />
 
 <main class="container valign-wrapper" style="display:flex; flex-direction: column">
-    <jsp:useBean id="lastHit"
+    <jsp:useBean id="currentHistory"
                  scope="session"
-                 class="beans.Hit"
+                 class="beans.HitHistory"
     />
 
     <div style="width: 100%;">
@@ -50,13 +54,23 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>${lastHit.getX()}</td>
-                <td>${lastHit.getY()}</td>
-                <td>${lastHit.getR()}</td>
-                <td>${lastHit.getExecutionTime()}</td>
-                <td>${lastHit.isHit()}</td>
-            </tr>
+            <c:forEach var="hit"
+                       items="${currentHistory.getHitList()}">
+                <tr>
+                    <td>${hit.getX()}</td>
+                    <td>${hit.getY()}</td>
+                    <td>${hit.getR()}</td>
+                    <td>${hit.getExecutionTime()}</td>
+                    <td>${hit.isHit()}</td>
+                </tr>
+            </c:forEach>
+<%--            <tr>--%>
+<%--                <td>${lastHit.getX()}</td>--%>
+<%--                <td>${lastHit.getY()}</td>--%>
+<%--                <td>${lastHit.getR()}</td>--%>
+<%--                <td>${lastHit.getExecutionTime()}</td>--%>
+<%--                <td>${lastHit.isHit()}</td>--%>
+<%--            </tr>--%>
             </tbody>
         </table>
     </div>

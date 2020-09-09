@@ -52,6 +52,7 @@ public class AreaCheckerServlet extends HttpServlet {
         }
 
         HitHistory hitHistory = (HitHistory) request.getAttribute("hitHistory");
+        HitHistory currentHistory = new HitHistory();
 
         for (double x : xArray) {
             Hit hit = new Hit();
@@ -67,13 +68,13 @@ public class AreaCheckerServlet extends HttpServlet {
             hit.setExecutionTime("" + (endTime - startTime));
 
             hitHistory.getHitList().add(hit);
+            currentHistory.getHitList().add(hit);
             LOGGER_ADAPTER.debug("Hit added in history: " + hit);
         }
 
         LOGGER_ADAPTER.info("Redirected on /result.jsp");
         LOGGER_ADAPTER.debug("HitHistory: " + request.getAttribute("hitHistory"));
-        LOGGER_ADAPTER.debug("LastHit: " + hitHistory.getHitList().get(hitHistory.getHitList().size() - 1));
-        request.setAttribute("lastHit", hitHistory.getHitList().get(hitHistory.getHitList().size() - 1));
+        request.setAttribute("currentHistory", currentHistory);
         getServletContext()
                 .getRequestDispatcher("/result.jsp")
                 .forward(request, response);
