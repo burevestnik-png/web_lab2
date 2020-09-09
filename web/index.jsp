@@ -130,12 +130,12 @@
         </tr>
         </thead>
 
-        <jsp:useBean id="hitList"
+        <jsp:useBean id="hitHistory"
                      scope="session"
                      class="beans.HitHistory"/>
         <tbody>
         <c:forEach var="hit"
-                   items="${hitList.getHitList()}">
+                   items="${hitHistory.getHitList()}">
             <tr>
                 <td>${hit.getX()}</td>
                 <td>${hit.getY()}</td>
