@@ -59,7 +59,13 @@ export default class App {
                 body: formData
             })
                 .then(response => response.text())
-                .then(data => console.log(data))
+                .then(data => {
+                    document.querySelector('table').innerHTML =
+                        data.match(/(?<=<[Tt][Aa][Bb][Ll][Ee] class="centered highlight" style="margin: 2rem 0 3rem">)([\s\S]*?)(?=<\/[Tt][Aa][Bb][Ll][Ee]>)/)[0];
+                })
+                .then(() => {
+                    window.location.replace('result.jsp')
+                })
         });
 
         this.themeBtn.addEventListener('click', this.changeTheme)
@@ -108,8 +114,8 @@ export default class App {
             const relativeUnit = 100 / r;
 
             const formData = new FormData();
-            formData.append("xValues", `${  (clickPoint.x - 150) / relativeUnit }`);
-            formData.append("y", `${ ( 150 - clickPoint.y ) / relativeUnit }`);
+            formData.append("xValues", `${  ((clickPoint.x - 150) / relativeUnit).toFixed(2) }`);
+            formData.append("y", `${ (( 150 - clickPoint.y ) / relativeUnit).toFixed(2) }`);
             formData.append("r", r);
 
             fetch('/web/api', {
@@ -117,7 +123,10 @@ export default class App {
                 body: formData
             })
                 .then(response => response.text())
-                .then(data => console.log(data));
+                .then(data => {
+                    document.querySelector('table').innerHTML =
+                        data.match(/(?<=<[Tt][Aa][Bb][Ll][Ee] class="centered highlight" style="margin: 2rem 0 3rem">)([\s\S]*?)(?=<\/[Tt][Aa][Bb][Ll][Ee]>)/)[0];
+                })
 
             Toast.successToast('Data was sent to server');
         })

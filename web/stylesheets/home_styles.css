@@ -47,6 +47,10 @@ a {
   transition: background-color 400ms;
 }
 
+table * {
+  color: var(--text-color);
+}
+
 body {
   display: flex;
   min-height: 100vh;

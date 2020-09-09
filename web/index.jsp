@@ -136,7 +136,7 @@
         </div>
     </div>
 
-    <table>
+    <table class="centered highlight" style="margin: 2rem 0 3rem">
         <thead>
         <tr>
             <th>X</th>
