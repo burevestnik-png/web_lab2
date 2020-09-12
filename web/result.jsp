@@ -33,8 +33,8 @@
           href="${pageContext.request.contextPath}/assets/favicon/favicon.ico"
     >
 </head>
-<body onload="init()">
-<jsp:include page="templates/header.html" />
+<body>
+<jsp:include page="templates/header-simple.html" />
 
 <main class="container valign-wrapper" style="display:flex; flex-direction: column">
     <jsp:useBean id="currentHistory"
@@ -66,13 +66,6 @@
                     <td>${hit.isHit()}</td>
                 </tr>
             </c:forEach>
-<%--            <tr>--%>
-<%--                <td>${lastHit.getX()}</td>--%>
-<%--                <td>${lastHit.getY()}</td>--%>
-<%--                <td>${lastHit.getR()}</td>--%>
-<%--                <td>${lastHit.getExecutionTime()}</td>--%>
-<%--                <td>${lastHit.isHit()}</td>--%>
-<%--            </tr>--%>
             </tbody>
         </table>
     </div>
@@ -84,43 +77,5 @@
 </main>
 
 <jsp:include page="templates/footer.html" />
-
-<script type="text/javascript">
-    const init = () => {
-        const themeBtn = document.getElementById('theme-btn');
-        const theme = localStorage.getItem('theme');
-
-        if (!theme) {
-            localStorage.setItem('theme', 'white');
-            return;
-        }
-
-        if (theme === 'dark') {
-            changeTheme({}, true);
-            themeBtn.checked = true;
-        }
-
-        themeBtn.addEventListener('click', ev => console.log('sdsdsd'))
-    }
-
-    const changeTheme = ( event, isDark = false ) => {
-        const themeElements = [
-            document.querySelector('.nav-wrapper'),
-            document.querySelector('footer'),
-            document.getElementById('go-back')
-        ];
-
-        document.body.classList.toggle('dark-theme')
-        themeElements.forEach(value => value.classList.toggle('darken-4'))
-        document.querySelectorAll('.r-btn').forEach(value => value.classList.toggle('darken-4'))
-
-        if (!isDark) {
-            localStorage.setItem(
-                'theme',
-                localStorage.getItem('theme') === 'dark' ? 'white' : 'dark'
-            )
-        }
-    }
-</script>
 </body>
 </html>
