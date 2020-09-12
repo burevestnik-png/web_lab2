@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8"
          language="java"
-         pageEncoding="utf-8" %>
+         pageEncoding="utf-8"
+%>
 
 <%
     String path = request.getContextPath();
@@ -11,9 +12,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+          content="width=device-width, initial-scale=1.0"
+    >
     <title>404</title>
-    <link rel="stylesheet" href="<%= path %>/stylesheets/error.css">
+    <link rel="stylesheet"
+          href="<%= path %>/stylesheets/error.css"
+    >
 </head>
 <body>
 <div class="noise"></div>

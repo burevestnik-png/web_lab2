@@ -1,5 +1,5 @@
-class Toast {
-    static errorToast(message) {
+export default class Toast {
+    static errorToast( message ) {
         const toastHTML = `<span>${ message }</span>`;
         window.M.toast({
             html: toastHTML,
@@ -7,14 +7,14 @@ class Toast {
         })
     }
 
-    static infoToast(message) {
+    static infoToast( message ) {
         const toastHTML = `<span>${ message }</span>`;
         window.M.toast({
             html: toastHTML
         })
     }
 
-    static successToast(message) {
+    static successToast( message ) {
         const toastHTML = `<span>${ message }</span>`;
         window.M.toast({
             html: toastHTML,

@@ -15,4 +15,11 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+    compile files("./libs/logger_adapter-1.0.jar")
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.13.1'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.10.3'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.3'
+    compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.10.3'
+    compile group: 'javax.servlet', name: 'jstl', version: '1.2'
 }

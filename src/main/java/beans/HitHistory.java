@@ -22,4 +22,11 @@ public class HitHistory implements Serializable {
     public void setHitList(List<Hit> hitList) {
         this.hitList = hitList;
     }
+
+    @Override
+    public String toString() {
+        return "HitHistory{" +
+                "hitList=" + hitList +
+                '}';
+    }
 }
