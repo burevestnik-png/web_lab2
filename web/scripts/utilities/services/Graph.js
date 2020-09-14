@@ -1,5 +1,6 @@
 export default class Graph {
     svgPoint
+    dots
 
     constructor() {
         this.svgPoint = document.querySelector('svg').createSVGPoint();
@@ -22,6 +23,7 @@ export default class Graph {
             dot.setAttributeNS(null, 'style', 'fill: white; stroke: black;');
 
             container.appendChild(dot);
+            this.dots.push(dot)
         })
     }
 
@@ -38,5 +40,13 @@ export default class Graph {
                 .getScreenCTM()
                 .inverse()
         );
+    }
+
+    restoreDots() {
+        const container = document.getElementById('svg');
+
+        this.dots.forEach(value => {
+            container.appendChild(value);
+        })
     }
 }
