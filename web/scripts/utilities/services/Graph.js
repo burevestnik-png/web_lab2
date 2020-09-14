@@ -4,6 +4,8 @@ export default class Graph {
 
     constructor() {
         this.svgPoint = document.querySelector('svg').createSVGPoint();
+
+        this.dots = localStorage.getItem('dots') || [];
     }
 
     drawDots( x, y, r,
@@ -25,6 +27,8 @@ export default class Graph {
             container.appendChild(dot);
             this.dots.push(dot)
         })
+
+        localStorage.setItem('dots', this.dots);
     }
 
     clearSvg() {

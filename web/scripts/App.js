@@ -36,7 +36,7 @@ export default class App {
 
             this.modal = new ModalWindow();
 
-            this.graph.restore();
+            this.graph.restoreDots();
 
             fetch('/web/api', {
                 method: 'GET'
