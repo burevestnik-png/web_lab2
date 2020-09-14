@@ -362,3 +362,466 @@
 [DEBUG] 2020-09-09 19:25:27.795 [default task-5] AreaCheckerServlet - [34mHit added in history: Hit{x=2.0, y=1.0, r=2.0, currentDate='09:19:20', executionTime='2', hit=false}[0m
 [INFO ] 2020-09-09 19:25:27.795 [default task-5] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
 [DEBUG] 2020-09-09 19:25:27.795 [default task-5] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:19:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=2.0, currentDate='09:19:20', executionTime='2', hit=true}, Hit{x=2.0, y=1.0, r=2.0, currentDate='09:19:20', executionTime='2', hit=false}]}[0m
+[INFO ] 2020-09-14 14:14:33.105 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57537[0m
+[INFO ] 2020-09-14 14:14:33.109 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:14:33.110 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:14:34.090 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57545[0m
+[INFO ] 2020-09-14 14:14:34.090 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:14:34.090 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:14:34.314 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57545[0m
+[INFO ] 2020-09-14 14:14:34.315 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:14:34.315 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:14:38.978 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57545[0m
+[INFO ] 2020-09-14 14:14:38.979 [default task-1] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:14:38.979 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:14:38.986 [default task-1] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:14:38.986 [default task-1] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:14:38.986 [default task-1] ControllerServlet - [37m---xValues : -4 -1 [0m
+[INFO ] 2020-09-14 14:14:38.986 [default task-1] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:14:38.993 [default task-1] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=false}[0m
+[DEBUG] 2020-09-14 14:14:38.993 [default task-1] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='7', hit=true}[0m
+[INFO ] 2020-09-14 14:14:38.993 [default task-1] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:14:38.993 [default task-1] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='7', hit=true}]}[0m
+[INFO ] 2020-09-14 14:15:15.631 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57545[0m
+[INFO ] 2020-09-14 14:15:15.635 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:15:15.635 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:15:19.343 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57549[0m
+[INFO ] 2020-09-14 14:15:19.343 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:15:19.343 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:18:20.136 [default task-4] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57717[0m
+[INFO ] 2020-09-14 14:18:20.137 [default task-4] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:18:20.137 [default task-4] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:19.999 [default task-5] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57718[0m
+[INFO ] 2020-09-14 14:19:20.000 [default task-5] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:20.000 [default task-5] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:21.489 [default task-5] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57718[0m
+[INFO ] 2020-09-14 14:19:21.489 [default task-5] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:21.489 [default task-5] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:22.734 [default task-5] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57717[0m
+[INFO ] 2020-09-14 14:19:22.734 [default task-5] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:22.734 [default task-5] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:23.696 [default task-7] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57718[0m
+[INFO ] 2020-09-14 14:19:23.696 [default task-7] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:23.696 [default task-7] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:24.782 [default task-6] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57725[0m
+[INFO ] 2020-09-14 14:19:24.782 [default task-6] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:24.782 [default task-6] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:25.820 [default task-7] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57725[0m
+[INFO ] 2020-09-14 14:19:25.820 [default task-7] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:25.820 [default task-7] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:26.754 [default task-7] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57717[0m
+[INFO ] 2020-09-14 14:19:26.755 [default task-7] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:26.755 [default task-7] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:27.576 [default task-3] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57726[0m
+[INFO ] 2020-09-14 14:19:27.576 [default task-3] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:27.576 [default task-3] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:28.375 [default task-7] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57718[0m
+[INFO ] 2020-09-14 14:19:28.375 [default task-7] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:28.375 [default task-7] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:29.344 [default task-6] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57717[0m
+[INFO ] 2020-09-14 14:19:29.344 [default task-6] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:29.344 [default task-6] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:30.264 [default task-7] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57718[0m
+[INFO ] 2020-09-14 14:19:30.264 [default task-7] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:30.264 [default task-7] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:31.157 [default task-7] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57717[0m
+[INFO ] 2020-09-14 14:19:31.157 [default task-7] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:31.157 [default task-7] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:32.002 [default task-5] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57718[0m
+[INFO ] 2020-09-14 14:19:32.002 [default task-5] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:32.002 [default task-5] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:32.787 [default task-5] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57725[0m
+[INFO ] 2020-09-14 14:19:32.787 [default task-5] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:32.787 [default task-5] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:33.534 [default task-7] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57718[0m
+[INFO ] 2020-09-14 14:19:33.534 [default task-7] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:33.534 [default task-7] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:50.561 [default task-6] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57717[0m
+[INFO ] 2020-09-14 14:19:50.561 [default task-6] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:50.561 [default task-6] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:19:52.293 [default task-6] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57725[0m
+[INFO ] 2020-09-14 14:19:52.293 [default task-6] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:19:52.293 [default task-6] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:20:02.114 [default task-6] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57722[0m
+[INFO ] 2020-09-14 14:20:02.114 [default task-6] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:20:02.114 [default task-6] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:22:47.357 [default task-6] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57883[0m
+[INFO ] 2020-09-14 14:22:47.358 [default task-6] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:22:47.358 [default task-6] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:23:29.986 [default task-8] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57883[0m
+[INFO ] 2020-09-14 14:23:29.986 [default task-8] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:23:29.986 [default task-8] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:24:27.715 [default task-10] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57892[0m
+[INFO ] 2020-09-14 14:24:27.715 [default task-10] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:24:27.715 [default task-10] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:24:30.783 [default task-9] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57884[0m
+[INFO ] 2020-09-14 14:24:30.783 [default task-9] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:24:30.783 [default task-9] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:24:30.783 [default task-9] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:24:30.783 [default task-9] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:24:30.784 [default task-9] ControllerServlet - [37m---xValues : -4 [0m
+[INFO ] 2020-09-14 14:24:30.784 [default task-9] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:24:30.787 [default task-9] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}[0m
+[INFO ] 2020-09-14 14:24:30.787 [default task-9] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:24:30.787 [default task-9] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}]}[0m
+[INFO ] 2020-09-14 14:24:46.209 [default task-9] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57884[0m
+[INFO ] 2020-09-14 14:24:46.209 [default task-9] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:24:46.209 [default task-9] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:25:09.177 [default task-11] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57893[0m
+[INFO ] 2020-09-14 14:25:09.177 [default task-11] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:25:09.177 [default task-11] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:25:24.830 [default task-11] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57888[0m
+[INFO ] 2020-09-14 14:25:24.830 [default task-11] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:25:24.830 [default task-11] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:25:28.055 [default task-8] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57884[0m
+[INFO ] 2020-09-14 14:25:28.056 [default task-8] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:25:28.056 [default task-8] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:25:28.056 [default task-8] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:25:28.056 [default task-8] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:25:28.056 [default task-8] ControllerServlet - [37m---xValues : -4 -1 [0m
+[INFO ] 2020-09-14 14:25:28.056 [default task-8] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:25:28.057 [default task-8] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}[0m
+[DEBUG] 2020-09-14 14:25:28.057 [default task-8] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}[0m
+[INFO ] 2020-09-14 14:25:28.057 [default task-8] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:25:28.057 [default task-8] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}]}[0m
+[INFO ] 2020-09-14 14:25:31.926 [default task-8] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57884[0m
+[INFO ] 2020-09-14 14:25:31.926 [default task-8] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:25:31.926 [default task-8] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:26:00.396 [default task-9] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57893[0m
+[INFO ] 2020-09-14 14:26:00.397 [default task-9] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:26:00.397 [default task-9] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:26:04.024 [default task-11] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57892[0m
+[INFO ] 2020-09-14 14:26:04.024 [default task-11] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:26:04.024 [default task-11] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:26:04.024 [default task-11] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:26:04.024 [default task-11] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:26:04.024 [default task-11] ControllerServlet - [37m---xValues : -4 -1 [0m
+[INFO ] 2020-09-14 14:26:04.024 [default task-11] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:26:04.025 [default task-11] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}[0m
+[DEBUG] 2020-09-14 14:26:04.025 [default task-11] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}[0m
+[INFO ] 2020-09-14 14:26:04.025 [default task-11] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:26:04.025 [default task-11] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}]}[0m
+[INFO ] 2020-09-14 14:26:55.823 [default task-11] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57892[0m
+[INFO ] 2020-09-14 14:26:55.823 [default task-11] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:26:55.823 [default task-11] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:27:00.755 [default task-12] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57892[0m
+[INFO ] 2020-09-14 14:27:00.755 [default task-12] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:27:00.755 [default task-12] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:27:00.755 [default task-12] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:27:00.755 [default task-12] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:27:00.755 [default task-12] ControllerServlet - [37m---xValues : -4 -1 [0m
+[INFO ] 2020-09-14 14:27:00.756 [default task-12] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:27:00.756 [default task-12] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}[0m
+[DEBUG] 2020-09-14 14:27:00.756 [default task-12] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}[0m
+[INFO ] 2020-09-14 14:27:00.756 [default task-12] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:27:00.756 [default task-12] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}]}[0m
+[INFO ] 2020-09-14 14:27:01.631 [default task-12] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:57892[0m
+[INFO ] 2020-09-14 14:27:01.631 [default task-12] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:27:01.631 [default task-12] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:31:50.883 [default task-13] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58230[0m
+[INFO ] 2020-09-14 14:31:50.883 [default task-13] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:31:50.883 [default task-13] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:31:51.288 [default task-14] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58231[0m
+[INFO ] 2020-09-14 14:31:51.288 [default task-14] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:31:51.289 [default task-14] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:32:20.781 [default task-14] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58231[0m
+[INFO ] 2020-09-14 14:32:20.781 [default task-14] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:32:20.781 [default task-14] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:32:21.097 [default task-14] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58231[0m
+[INFO ] 2020-09-14 14:32:21.097 [default task-14] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:32:21.097 [default task-14] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:32:23.972 [default task-14] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58231[0m
+[INFO ] 2020-09-14 14:32:23.972 [default task-14] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:32:23.972 [default task-14] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:32:23.972 [default task-14] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:32:23.972 [default task-14] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:32:23.972 [default task-14] ControllerServlet - [37m---xValues : -4 -1 [0m
+[INFO ] 2020-09-14 14:32:23.972 [default task-14] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:32:23.973 [default task-14] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}[0m
+[DEBUG] 2020-09-14 14:32:23.973 [default task-14] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}[0m
+[INFO ] 2020-09-14 14:32:23.973 [default task-14] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:32:23.973 [default task-14] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}]}[0m
+[INFO ] 2020-09-14 14:32:27.224 [default task-14] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58231[0m
+[INFO ] 2020-09-14 14:32:27.224 [default task-14] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:32:27.224 [default task-14] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:33:16.607 [default task-16] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58243[0m
+[INFO ] 2020-09-14 14:33:16.607 [default task-16] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:33:16.607 [default task-16] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:33:20.024 [default task-17] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58231[0m
+[INFO ] 2020-09-14 14:33:20.024 [default task-17] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:33:20.024 [default task-17] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:33:20.024 [default task-17] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:33:20.024 [default task-17] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:33:20.024 [default task-17] ControllerServlet - [37m---xValues : -4 -1 [0m
+[INFO ] 2020-09-14 14:33:20.024 [default task-17] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:33:20.024 [default task-17] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}[0m
+[DEBUG] 2020-09-14 14:33:20.024 [default task-17] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}[0m
+[INFO ] 2020-09-14 14:33:20.025 [default task-17] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:33:20.025 [default task-17] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}]}[0m
+[INFO ] 2020-09-14 14:33:21.225 [default task-17] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58231[0m
+[INFO ] 2020-09-14 14:33:21.225 [default task-17] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:33:21.225 [default task-17] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:34:06.220 [default task-16] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58239[0m
+[INFO ] 2020-09-14 14:34:06.220 [default task-16] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:34:06.220 [default task-16] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:34:10.064 [default task-16] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58239[0m
+[INFO ] 2020-09-14 14:34:10.064 [default task-16] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:34:10.064 [default task-16] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:34:10.065 [default task-16] ControllerServlet - [37m---r : 2 [0m
+[INFO ] 2020-09-14 14:34:10.065 [default task-16] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:34:10.065 [default task-16] ControllerServlet - [37m---xValues : -4 -1 [0m
+[INFO ] 2020-09-14 14:34:10.065 [default task-16] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:34:10.065 [default task-16] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=false}[0m
+[DEBUG] 2020-09-14 14:34:10.065 [default task-16] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=true}[0m
+[INFO ] 2020-09-14 14:34:10.065 [default task-16] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:34:10.066 [default task-16] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=true}]}[0m
+[INFO ] 2020-09-14 14:34:10.882 [default task-16] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58239[0m
+[INFO ] 2020-09-14 14:34:10.883 [default task-16] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:34:10.883 [default task-16] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:38:02.784 [default task-15] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58607[0m
+[INFO ] 2020-09-14 14:38:02.784 [default task-15] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:38:02.784 [default task-15] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:38:08.250 [default task-19] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58607[0m
+[INFO ] 2020-09-14 14:38:08.250 [default task-19] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:38:08.250 [default task-19] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:38:11.527 [default task-20] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58618[0m
+[INFO ] 2020-09-14 14:38:11.528 [default task-20] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:38:11.528 [default task-20] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:38:11.528 [default task-20] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:38:11.528 [default task-20] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:38:11.528 [default task-20] ControllerServlet - [37m---xValues : -4 -1 2 [0m
+[INFO ] 2020-09-14 14:38:11.528 [default task-20] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:38:11.529 [default task-20] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}[0m
+[DEBUG] 2020-09-14 14:38:11.529 [default task-20] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}[0m
+[DEBUG] 2020-09-14 14:38:11.529 [default task-20] AreaCheckerServlet - [34mHit added in history: Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}[0m
+[INFO ] 2020-09-14 14:38:11.529 [default task-20] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:38:11.530 [default task-20] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}]}[0m
+[INFO ] 2020-09-14 14:38:13.787 [default task-20] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58612[0m
+[INFO ] 2020-09-14 14:38:13.787 [default task-20] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:38:13.787 [default task-20] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:38:14.073 [default task-15] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58608[0m
+[INFO ] 2020-09-14 14:38:14.074 [default task-15] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:38:14.074 [default task-15] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:38:31.843 [default task-15] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58608[0m
+[INFO ] 2020-09-14 14:38:31.843 [default task-15] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:38:31.843 [default task-15] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:38:31.843 [default task-15] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:38:31.843 [default task-15] ControllerServlet - [37m---y : -0.89 [0m
+[INFO ] 2020-09-14 14:38:31.843 [default task-15] ControllerServlet - [37m---xValues : 0.55 [0m
+[INFO ] 2020-09-14 14:38:31.844 [default task-15] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:38:31.844 [default task-15] AreaCheckerServlet - [34mHit added in history: Hit{x=0.55, y=-0.89, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}[0m
+[INFO ] 2020-09-14 14:38:31.844 [default task-15] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:38:31.844 [default task-15] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=0.55, y=-0.89, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}]}[0m
+[INFO ] 2020-09-14 14:38:34.286 [default task-19] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58608[0m
+[INFO ] 2020-09-14 14:38:34.286 [default task-19] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:38:34.286 [default task-19] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:39:47.164 [default task-20] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58696[0m
+[INFO ] 2020-09-14 14:39:47.164 [default task-20] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:39:47.164 [default task-20] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:39:50.482 [default task-21] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58697[0m
+[INFO ] 2020-09-14 14:39:50.482 [default task-21] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:39:50.482 [default task-21] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:39:54.249 [default task-22] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58703[0m
+[INFO ] 2020-09-14 14:39:54.249 [default task-22] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:39:54.249 [default task-22] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:39:54.249 [default task-22] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:39:54.249 [default task-22] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:39:54.250 [default task-22] ControllerServlet - [37m---xValues : -4 -1 2 [0m
+[INFO ] 2020-09-14 14:39:54.250 [default task-22] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:39:54.250 [default task-22] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}[0m
+[DEBUG] 2020-09-14 14:39:54.250 [default task-22] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}[0m
+[DEBUG] 2020-09-14 14:39:54.250 [default task-22] AreaCheckerServlet - [34mHit added in history: Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}[0m
+[INFO ] 2020-09-14 14:39:54.250 [default task-22] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:39:54.250 [default task-22] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=0.55, y=-0.89, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}]}[0m
+[INFO ] 2020-09-14 14:39:55.833 [default task-22] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58703[0m
+[INFO ] 2020-09-14 14:39:55.833 [default task-22] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:39:55.833 [default task-22] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:39:56.152 [default task-21] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58697[0m
+[INFO ] 2020-09-14 14:39:56.152 [default task-21] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:39:56.152 [default task-21] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:40:00.071 [default task-21] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58697[0m
+[INFO ] 2020-09-14 14:40:00.071 [default task-21] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:40:00.071 [default task-21] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:40:00.071 [default task-21] ControllerServlet - [37m---r : 4 [0m
+[INFO ] 2020-09-14 14:40:00.071 [default task-21] ControllerServlet - [37m---y : -1.11 [0m
+[INFO ] 2020-09-14 14:40:00.071 [default task-21] ControllerServlet - [37m---xValues : 1.26 [0m
+[INFO ] 2020-09-14 14:40:00.071 [default task-21] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:40:00.072 [default task-21] AreaCheckerServlet - [34mHit added in history: Hit{x=1.26, y=-1.11, r=4.0, currentDate='09:14:20', executionTime='1', hit=true}[0m
+[INFO ] 2020-09-14 14:40:00.072 [default task-21] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:40:00.072 [default task-21] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=0.55, y=-0.89, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=1.26, y=-1.11, r=4.0, currentDate='09:14:20', executionTime='1', hit=true}]}[0m
+[INFO ] 2020-09-14 14:40:01.034 [default task-20] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58697[0m
+[INFO ] 2020-09-14 14:40:01.034 [default task-20] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:40:01.034 [default task-20] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:40:01.452 [default task-22] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58703[0m
+[INFO ] 2020-09-14 14:40:01.452 [default task-22] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:40:01.452 [default task-22] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:40:04.944 [default task-22] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58703[0m
+[INFO ] 2020-09-14 14:40:04.944 [default task-22] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:40:04.944 [default task-22] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:40:04.945 [default task-22] ControllerServlet - [37m---r : 1 [0m
+[INFO ] 2020-09-14 14:40:04.945 [default task-22] ControllerServlet - [37m---y : -0.13 [0m
+[INFO ] 2020-09-14 14:40:04.945 [default task-22] ControllerServlet - [37m---xValues : -0.53 [0m
+[INFO ] 2020-09-14 14:40:04.945 [default task-22] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:40:04.945 [default task-22] AreaCheckerServlet - [34mHit added in history: Hit{x=-0.53, y=-0.13, r=1.0, currentDate='09:14:20', executionTime='0', hit=true}[0m
+[INFO ] 2020-09-14 14:40:04.945 [default task-22] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:40:04.945 [default task-22] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=0.55, y=-0.89, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=1.26, y=-1.11, r=4.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-0.53, y=-0.13, r=1.0, currentDate='09:14:20', executionTime='0', hit=true}]}[0m
+[INFO ] 2020-09-14 14:40:05.798 [default task-22] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58703[0m
+[INFO ] 2020-09-14 14:40:05.798 [default task-22] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:40:05.798 [default task-22] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:40:06.084 [default task-20] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58697[0m
+[INFO ] 2020-09-14 14:40:06.084 [default task-20] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:40:06.084 [default task-20] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:40:19.745 [default task-20] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58697[0m
+[INFO ] 2020-09-14 14:40:19.745 [default task-20] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:40:19.745 [default task-20] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:40:20.032 [default task-22] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58703[0m
+[INFO ] 2020-09-14 14:40:20.032 [default task-22] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:40:20.032 [default task-22] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:40:23.129 [default task-22] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58703[0m
+[INFO ] 2020-09-14 14:40:23.129 [default task-22] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:40:23.129 [default task-22] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:40:23.481 [default task-18] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58696[0m
+[INFO ] 2020-09-14 14:40:23.481 [default task-18] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:40:23.481 [default task-18] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:42:30.933 [default task-18] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58800[0m
+[INFO ] 2020-09-14 14:42:30.934 [default task-18] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:42:30.934 [default task-18] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:42:31.494 [default task-18] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58800[0m
+[INFO ] 2020-09-14 14:42:31.495 [default task-18] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:42:31.495 [default task-18] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:42:34.578 [default task-18] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58800[0m
+[INFO ] 2020-09-14 14:42:34.578 [default task-18] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:42:34.578 [default task-18] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:42:34.859 [default task-24] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58809[0m
+[INFO ] 2020-09-14 14:42:34.859 [default task-24] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:42:34.859 [default task-24] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:43:26.344 [default task-24] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58809[0m
+[INFO ] 2020-09-14 14:43:26.344 [default task-24] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:43:26.344 [default task-24] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:43:26.690 [default task-23] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58801[0m
+[INFO ] 2020-09-14 14:43:26.691 [default task-23] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:43:26.691 [default task-23] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:43:30.474 [default task-23] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58801[0m
+[INFO ] 2020-09-14 14:43:30.474 [default task-23] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:43:30.474 [default task-23] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:43:30.475 [default task-23] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:43:30.475 [default task-23] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:43:30.475 [default task-23] ControllerServlet - [37m---xValues : -4 -1 2 [0m
+[INFO ] 2020-09-14 14:43:30.475 [default task-23] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:43:30.475 [default task-23] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}[0m
+[DEBUG] 2020-09-14 14:43:30.475 [default task-23] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}[0m
+[DEBUG] 2020-09-14 14:43:30.475 [default task-23] AreaCheckerServlet - [34mHit added in history: Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}[0m
+[INFO ] 2020-09-14 14:43:30.476 [default task-23] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:43:30.476 [default task-23] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='2', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=2.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='1', hit=false}, Hit{x=0.55, y=-0.89, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=1.26, y=-1.11, r=4.0, currentDate='09:14:20', executionTime='1', hit=true}, Hit{x=-0.53, y=-0.13, r=1.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}]}[0m
+[INFO ] 2020-09-14 14:43:31.815 [default task-23] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58801[0m
+[INFO ] 2020-09-14 14:43:31.815 [default task-23] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:43:31.815 [default task-23] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:43:32.121 [default task-20] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58803[0m
+[INFO ] 2020-09-14 14:43:32.121 [default task-20] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:43:32.121 [default task-20] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:44:11.286 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58954[0m
+[INFO ] 2020-09-14 14:44:11.291 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:44:11.291 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:44:12.435 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:44:12.435 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:44:12.436 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:44:12.652 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:44:12.652 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:44:12.652 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:44:15.755 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:44:15.755 [default task-1] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:44:15.755 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:44:15.762 [default task-1] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:44:15.762 [default task-1] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:44:15.762 [default task-1] ControllerServlet - [37m---xValues : -4 -1 2 [0m
+[INFO ] 2020-09-14 14:44:15.762 [default task-1] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:44:15.768 [default task-1] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=false}[0m
+[DEBUG] 2020-09-14 14:44:15.768 [default task-1] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=true}[0m
+[DEBUG] 2020-09-14 14:44:15.769 [default task-1] AreaCheckerServlet - [34mHit added in history: Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=false}[0m
+[INFO ] 2020-09-14 14:44:15.769 [default task-1] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:44:15.769 [default task-1] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=false}]}[0m
+[INFO ] 2020-09-14 14:44:16.872 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:44:16.872 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:44:16.872 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:44:16.929 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:44:16.930 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:44:16.930 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:15.029 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:45:15.029 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:45:15.030 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:15.454 [default task-2] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:45:15.455 [default task-2] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:45:15.455 [default task-2] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:16.727 [default task-2] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:45:16.727 [default task-2] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:45:16.727 [default task-2] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:17.062 [default task-4] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58997[0m
+[INFO ] 2020-09-14 14:45:17.062 [default task-4] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:45:17.063 [default task-4] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:21.631 [default task-4] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58997[0m
+[INFO ] 2020-09-14 14:45:21.631 [default task-4] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:45:21.631 [default task-4] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:21.631 [default task-4] ControllerServlet - [37m---r : 3 [0m
+[INFO ] 2020-09-14 14:45:21.632 [default task-4] ControllerServlet - [37m---y : 1 [0m
+[INFO ] 2020-09-14 14:45:21.632 [default task-4] ControllerServlet - [37m---xValues : -4 -1 2 [0m
+[INFO ] 2020-09-14 14:45:21.632 [default task-4] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:45:21.632 [default task-4] AreaCheckerServlet - [34mHit added in history: Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}[0m
+[DEBUG] 2020-09-14 14:45:21.632 [default task-4] AreaCheckerServlet - [34mHit added in history: Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}[0m
+[DEBUG] 2020-09-14 14:45:21.633 [default task-4] AreaCheckerServlet - [34mHit added in history: Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}[0m
+[INFO ] 2020-09-14 14:45:21.633 [default task-4] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:45:21.633 [default task-4] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}]}[0m
+[INFO ] 2020-09-14 14:45:22.868 [default task-4] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58997[0m
+[INFO ] 2020-09-14 14:45:22.868 [default task-4] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:45:22.868 [default task-4] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:23.151 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:45:23.151 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:45:23.151 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:28.147 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:45:28.148 [default task-1] ControllerServlet - [37mPOST[0m
+[INFO ] 2020-09-14 14:45:28.148 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:28.148 [default task-1] ControllerServlet - [37m---r : 5 [0m
+[INFO ] 2020-09-14 14:45:28.148 [default task-1] ControllerServlet - [37m---y : 5.51 [0m
+[INFO ] 2020-09-14 14:45:28.148 [default task-1] ControllerServlet - [37m---xValues : -2.83 [0m
+[INFO ] 2020-09-14 14:45:28.148 [default task-1] ControllerServlet - [37mRedirected on /result[0m
+[DEBUG] 2020-09-14 14:45:28.148 [default task-1] AreaCheckerServlet - [34mHit added in history: Hit{x=-2.83, y=5.51, r=5.0, currentDate='09:14:20', executionTime='0', hit=false}[0m
+[INFO ] 2020-09-14 14:45:28.149 [default task-1] AreaCheckerServlet - [37mRedirected on /result.jsp[0m
+[DEBUG] 2020-09-14 14:45:28.149 [default task-1] AreaCheckerServlet - [34mHitHistory: HitHistory{hitList=[Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='6', hit=false}, Hit{x=-4.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-1.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=true}, Hit{x=2.0, y=1.0, r=3.0, currentDate='09:14:20', executionTime='0', hit=false}, Hit{x=-2.83, y=5.51, r=5.0, currentDate='09:14:20', executionTime='0', hit=false}]}[0m
+[INFO ] 2020-09-14 14:45:28.926 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:45:28.926 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:45:28.926 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:29.204 [default task-3] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58997[0m
+[INFO ] 2020-09-14 14:45:29.204 [default task-3] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:45:29.204 [default task-3] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:34.027 [default task-3] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58997[0m
+[INFO ] 2020-09-14 14:45:34.027 [default task-3] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:45:34.027 [default task-3] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:45:34.294 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:45:34.294 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:45:34.294 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:46:00.564 [default task-1] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58959[0m
+[INFO ] 2020-09-14 14:46:00.564 [default task-1] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:46:00.564 [default task-1] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:46:32.728 [default task-3] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58996[0m
+[INFO ] 2020-09-14 14:46:32.729 [default task-3] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:46:32.729 [default task-3] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:46:33.059 [default task-4] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58990[0m
+[INFO ] 2020-09-14 14:46:33.059 [default task-4] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:46:33.059 [default task-4] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:46:43.433 [default task-4] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58990[0m
+[INFO ] 2020-09-14 14:46:43.433 [default task-4] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:46:43.433 [default task-4] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:46:43.719 [default task-2] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58997[0m
+[INFO ] 2020-09-14 14:46:43.719 [default task-2] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:46:43.719 [default task-2] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:46:45.839 [default task-2] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58997[0m
+[INFO ] 2020-09-14 14:46:45.839 [default task-2] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:46:45.840 [default task-2] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:46:46.160 [default task-4] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58996[0m
+[INFO ] 2020-09-14 14:46:46.160 [default task-4] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:46:46.161 [default task-4] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:46:47.623 [default task-4] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58996[0m
+[INFO ] 2020-09-14 14:46:47.624 [default task-4] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:46:47.624 [default task-4] ControllerServlet - [37mParams: [0m
+[INFO ] 2020-09-14 14:46:47.889 [default task-4] ControllerServlet - [37mGot request from: 127.0.0.1 127.0.0.1:58997[0m
+[INFO ] 2020-09-14 14:46:47.889 [default task-4] ControllerServlet - [37mGET[0m
+[INFO ] 2020-09-14 14:46:47.889 [default task-4] ControllerServlet - [37mParams: [0m

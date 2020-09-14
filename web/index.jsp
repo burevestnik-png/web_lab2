@@ -50,13 +50,13 @@
             <div>
                 <jsp:include page="templates/svg.html" />
             </div>
-            <button class="cyan waves-effect waves-light btn"
+            <%--<button class="cyan waves-effect waves-light btn"
                     id="clear-svg"
                     style="margin-top: 2rem;"
             >
                 Clear
                 <i class="material-icons right">delete</i>
-            </button>
+            </button>--%>
         </div>
 
         <div class="col s6 row main-border hoverable">

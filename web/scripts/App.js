@@ -77,10 +77,10 @@ export default class App {
 
         this.themeBtn.addEventListener('click', this.changeTheme)
 
-        this.clearSvgBtn.addEventListener('click', () => {
-            this.graph.clearSvg();
-            Toast.infoToast('Picture was cleared')
-        })
+        // this.clearSvgBtn.addEventListener('click', () => {
+        //     this.graph.clearSvg();
+        //     Toast.infoToast('Picture was cleared')
+        // })
 
         this.resetBtn.addEventListener('click', ( event ) => {
             event.preventDefault();
@@ -145,7 +145,7 @@ export default class App {
             document.getElementById('submit'),
             document.getElementById('reset'),
             document.getElementById('modal-btn'),
-            document.getElementById('clear-svg')
+            /*document.getElementById('clear-svg')*/
         ];
 
         document.body.classList.toggle('dark-theme')

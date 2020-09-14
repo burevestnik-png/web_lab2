@@ -1,11 +1,8 @@
 export default class Graph {
     svgPoint
-    dots
 
     constructor() {
         this.svgPoint = document.querySelector('svg').createSVGPoint();
-
-        this.dots = localStorage.getItem('dots') || [];
     }
 
     drawDots( x, y, r,
@@ -16,7 +13,18 @@ export default class Graph {
         const svgns = "http://www.w3.org/2000/svg"
         const container = document.getElementById('svg');
 
+        const dotsObjects = sessionStorage.getItem("dotsObjects") ? JSON.parse(sessionStorage.getItem("dotsObjects")) : [];
+
         x.forEach(( value ) => {
+            const dotObject = {
+                x: value,
+                y: y,
+                r: r,
+                isCalculated: isCalculated,
+                radius: radius,
+                relativeUnit: relativeUnit
+            };
+
             const dot = document.createElementNS(svgns, 'circle');
             dot.setAttributeNS(null, 'cx', isCalculated ? value : 150 + relativeUnit * value);
             dot.setAttributeNS(null, 'cy', isCalculated ? y : 150 - relativeUnit * y);
@@ -25,15 +33,15 @@ export default class Graph {
             dot.setAttributeNS(null, 'style', 'fill: white; stroke: black;');
 
             container.appendChild(dot);
-            this.dots.push(dot)
-        })
+            dotsObjects.push(JSON.stringify(dotObject));
+        });
 
-        localStorage.setItem('dots', this.dots);
+        sessionStorage.setItem('dotsObjects', JSON.stringify(dotsObjects));
     }
 
-    clearSvg() {
-        document.querySelectorAll('.target-dot').forEach(value => value.remove());
-    }
+    // clearSvg() {
+    //     document.querySelectorAll('.target-dot').forEach(value => value.remove());
+    // }
 
     getClickPoint( event ) {
         this.svgPoint.x = event.clientX;
@@ -49,8 +57,20 @@ export default class Graph {
     restoreDots() {
         const container = document.getElementById('svg');
 
-        this.dots.forEach(value => {
-            container.appendChild(value);
-        })
+        const svgns = "http://www.w3.org/2000/svg"
+
+        if (sessionStorage.getItem("dotsObjects")) {
+            JSON.parse(sessionStorage.getItem("dotsObjects")).forEach(value => {
+                const dot = JSON.parse(value);
+                const dotElement = document.createElementNS(svgns, 'circle');
+                dotElement.setAttributeNS(null, 'cx', dot.isCalculated ? dot.x : 150 + dot.relativeUnit * dot.x);
+                dotElement.setAttributeNS(null, 'cy', dot.isCalculated ? dot.y : 150 - dot.relativeUnit * dot.y);
+                dotElement.setAttributeNS(null, 'class', "target-dot");
+                dotElement.setAttributeNS(null, 'r', dot.radius.toString());
+                dotElement.setAttributeNS(null, 'style', 'fill: white; stroke: black;');
+
+                container.appendChild(dotElement);
+            });
+        }
     }
 }
