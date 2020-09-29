@@ -75,19 +75,21 @@
                 <div class="col s12">
                     <p class="center-align">Choose X value:</p>
                     <div class="x-group">
-                        <%
-                            for (String value : checkboxValues) {
-                                out.println("<label class=\"valign-wrapper\">");
-                                out.println("<div class=\"center\">");
-                                out.println("<input type=\"checkbox\"");
-                                out.println("value=\"" + value + "\"");
-                                out.println("name=\"x-group\"");
-                                out.println("class=\"filled-in center cyan\"/>");
-                                out.println("<span> " + value + "</span>");
-                                out.println("</div>");
-                                out.println("</label>");
-                            }
-                        %>
+                        <c:foreach items="${checkboxValues}"
+                                   var="value"
+                        >
+                            <label class="valign-wrapper">
+                                <div class="center">
+                                    <input type="checkbox"
+                                           value="${value}"
+                                           name="x-group"
+                                           class="filled-in center cyan"
+                                    />
+                                    <span>${value}</span>
+                                </div>
+                            </label>
+
+                        </c:foreach>
                     </div>
                 </div>
 
@@ -96,13 +98,13 @@
                 >
                     <p class="center-align">Choose R value:</p>
                     <div class="center">
-                        <%
-                            for (String value : buttonValues) {
-                                out.println("<button class=\"cyan waves-effect waves-light btn r-btn\" type=\"button\">");
-                                out.println(value);
-                                out.println("</button>");
-                            }
-                        %>
+                        <% for (String value : buttonValues) { %>
+                        <button class="cyan waves-effect waves-light btn r-btn"
+                                type=button
+                        >
+                            <%= value %>
+                        </button>
+                        <% } %>
                     </div>
                     <p class="center-align"
                        style="font-size: .8rem;"
@@ -136,7 +138,9 @@
         </div>
     </div>
 
-    <table class="centered highlight" style="margin: 2rem 0 3rem">
+    <table class="centered highlight"
+           style="margin: 2rem 0 3rem"
+    >
         <thead>
         <tr>
             <th>X</th>
@@ -153,7 +157,8 @@
         />
         <tbody>
         <c:forEach var="hit"
-                   items="${hitHistory.getHitList()}">
+                   items="${hitHistory.getHitList()}"
+        >
             <tr>
                 <td>${hit.getX()}</td>
                 <td>${hit.getY()}</td>
