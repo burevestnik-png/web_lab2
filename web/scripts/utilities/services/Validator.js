@@ -47,6 +47,38 @@ export default class Validator {
             return "Y value should be from -5 to 3"
         }
 
+        if (value.startsWith("3")) {
+            const temp = value.slice(1);
+            const numberLetters = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+            let answer = "";
+            numberLetters.forEach(numberLetter => {
+                if (temp.includes(numberLetter)) {
+                    answer = "Y value should be from -5 to 3";
+                }
+            });
+
+            if (answer.length > 0) {
+                return answer;
+            }
+        }
+
+        if (value.startsWith("-5")) {
+            const temp = value.slice(2);
+            const numberLetters = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+            let answer = "";
+            numberLetters.forEach(numberLetter => {
+                if (temp.includes(numberLetter)) {
+                    answer = "Y value should be from -5 to 3";
+                }
+            });
+
+            if (answer.length > 0) {
+                return answer;
+            }
+        }
+
         return "";
     }
 }
